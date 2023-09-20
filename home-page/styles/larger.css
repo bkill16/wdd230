@@ -1,0 +1,24 @@
+@media (min-width: 640px) {
+  nav {
+    max-width: 100%;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+  }
+
+  main h2 {
+    text-align: left;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
+
+  footer {
+    justify-content: center;
+  }
+}

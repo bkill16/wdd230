@@ -3,9 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+    <title>Brenleigh Killpack - WDD 230 - Web Frontend Development</title>
+    <meta
+      name="description"
+      content="Brenleigh Killpack WDD 230 course assignment portal"
+    />
+    <meta name="author" content="Brenleigh Killpack" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./home-page/styles/base.css" />
+    <link rel="stylesheet" href="./home-page/styles/larger.css" />
   </head>
   <body>
-    <h1>Home Page</h1>
+    <header>
+      <img src="./home-page/images/profile-pic.png" alt="My Pic" />
+      <h1>Brenleigh Killpack</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="">Chamber</a></li>
+        <li><a href="">Site Plan</a></li>
+        <li><a href="">Form</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>WDD 230: Web Frontend Development</h2>
+      <div class="container">
+        <section id="learning" class="card">
+          <h3>Learning Activities</h3>
+          <ul>
+            <li>
+              Week 01:
+              <a href="./week01/holygrail.html">Layout</a><span> | </span>
+              <a href="./week01/media-query.html">Media Query</a><span> | </span>
+              <a href="https://codepen.io/bkill16/pen/YzdxzmQ">JS Pen</a>
+            </li>
+            <li>Week 02:</li>
+            <li>Week 03:</li>
+            <li>Week 04:</li>
+            <li>Week 05:</li>
+            <li>Week 06:</li>
+          </ul>
+        </section>
+        <section id="info" class="card">
+          <h3>Information</h3>
+          <p>Rexburg, Idaho</p>
+          <p>Weather</p>
+          <p>Page Visits:</p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; <span id="date"></span> - Brenleigh Killpack - United States</p>
+      <img src="./home-page/images/us-flag.png" alt="US Flag" />
+      <p id="lastModified"></p>
+    </footer>
+    <script src="./home-page/scripts/getDates.js"></script>
   </body>
 </html>
