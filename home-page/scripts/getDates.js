@@ -1,6 +1,6 @@
-currentTime = new Date();
-var year = currentTime.getFullYear();
+const today = new Date();
+var year = today.getFullYear();
 document.getElementById('date').innerHTML = year;
 
-let dateLastModified = new Date(document.lastModified);
-document.getElementById('lastModified').innerHTML = dateLastModified;
+let dateLastModified = document.lastModified;
+document.getElementById('last-modified').innerHTML = dateLastModified;
