@@ -53,6 +53,7 @@ nav a:hover {
 main h2 {
   margin: 25px;
   text-align: center;
+  font-size: 24px;
 }
 
 .card {
@@ -65,7 +66,7 @@ main h2 {
 .card h3 {
   background-color: #52796f;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 20px;
   padding: 5px;
 }
 
@@ -83,17 +84,17 @@ main h2 {
 footer {
   background-color: #52796f;
   margin-top: 25px;
-  display: flex;
-  text-align: center;
-  align-items: center;
 }
 
-footer p {
-  font-size: 1rem;
-  padding: 10px;
+#footerCopyRight {
+  font-size: 18px;
+  padding: 5px;
   text-align: center;
 }
 
-footer img {
-  padding: 10px;
+#footerDate {
+  font-size: 14px;
+  padding: 5px;
+  text-align: center;
+  color: yellow;
 }
