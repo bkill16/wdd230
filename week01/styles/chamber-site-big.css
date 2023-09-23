@@ -1,0 +1,28 @@
+@media (min-width: 640px) {
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        text-align: center;
+        margin: 50px;
+        font-size: 1.25rem;
+    }
+
+    #color-title {
+        margin-top: 50px;
+    }
+
+    .red-title {
+        margin-top: 50px;
+    }
+
+    #heading-font {
+        font-size: 1.25rem;
+    }
+
+    #body-font p {
+        font-size: 1.25rem;
+    }
+}
