@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+h1, h2, h3, h4 {
+    font-family: 'Varela Round', sans-serif;
+}
+
+p, li {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: #0085CD;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.card {
+    border: solid black 1px;
+    margin: 15px;
+}
+
+.card h3{
+    background-color: #FFCB03;
+    padding: 5px;
+}
+
+.card p {
+    margin: 5px;
+}
+
+.card h4 {
+    margin: 5px;
+}
+
+#scenarios li {
+    list-style-type: none;
+    margin: 5px;
+}
+
+#color-title {
+    text-align: center;
+}
+
+#color-scheme {
+    display: flex;
+    justify-content: center;
+}
+
+#blue {
+    height: 50px;
+    width: 50px;
+    border: solid 1px black;
+    background-color: #0085CD;
+    margin: 5px;
+}
+
+#white {
+    height: 50px;
+    width: 50px;
+    border: solid 1px black;
+    background-color: white;
+    margin: 5px;
+}
+
+#yellow {
+    height: 50px;
+    width: 50px;
+    border: solid 1px black;
+    background-color: #FFCB03;
+    margin: 5px;
+}
+
+#red {
+    height: 50px;
+    width: 50px;
+    border: solid 1px black;
+    background-color: #FF5062;
+    margin: 5px;
+}
+
+#black {
+    height: 50px;
+    width: 50px;
+    border: solid 1px black;
+    background-color: black;
+    margin: 5px;
+}
+
+.red-title {
+    background-color: #FF5062;
+    text-align: center;
+    padding: 25px;
+    margin-top: 10px;
+}
+
+#heading-font {
+    margin: 15px;
+    text-align: center;
+}
+
+#body-font {
+    margin: 15px;
+    text-align: center;
+}
+
+.body-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#body-font p {
+    margin: 15px;
+}
+
+#wireframes {
+    text-align: center;
+    margin: 15px;
+}
+
+#wireframes h3 {
+    margin: 15px;
+}
