@@ -10,6 +10,11 @@
     flex: 1 1 100%;
   }
 
+  main {
+    height: 100%;
+    width: 100%;
+  }
+
   main h2 {
     text-align: left;
   }
@@ -20,9 +25,8 @@
   }
 
   footer {
-    position:absolute;
-    bottom: 0;
     width: 100%;
+    margin-top: 25px;
   }
 
 }
