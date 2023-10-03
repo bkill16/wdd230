@@ -29,8 +29,8 @@ header h1 {
 
 #mode {
 	position: absolute;
-	top: .12rem;
-	right: -.12rem;
+	top: .1rem;
+	right: -.1rem;
 	font-size: 3rem;
 	cursor: pointer;
 }
