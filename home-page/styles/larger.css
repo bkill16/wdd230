@@ -24,9 +24,29 @@
     grid-template-columns: 3fr 2fr;
   }
 
+  .card {
+    border: solid black 1px;
+    box-shadow: 0px 0px 3px 3px gray;
+    margin: 15px;
+  }
+
   footer {
     width: 100%;
     margin-top: 25px;
+  }
+
+  #footerCopyRight {
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+  }
+  
+  #footerDate {
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+    color: yellow;
   }
 
 }
