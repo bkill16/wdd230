@@ -27,6 +27,14 @@ header h1 {
   color: white;
 }
 
+#mode {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+
 #menu {
 	font-size: 1.5rem;
 	border: 1px solid rgba(0,0,0,.3);
