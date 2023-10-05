@@ -4,8 +4,9 @@
   }
 
   #mode {
-    top: 0.12rem;
-    right: -0.12rem;
+    top: 5px;
+    right: 5px;
+    font-size: 1rem;
   }
 
   .navigation {

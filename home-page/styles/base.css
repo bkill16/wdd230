@@ -28,10 +28,10 @@ header h1 {
 }
 
 #mode {
-	position: absolute;
-	top: 3px;
-	right: 3px;
-	font-size: 3rem;
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+	font-size: .75rem;
 	cursor: pointer;
 }
 
@@ -83,6 +83,11 @@ header h1 {
 	display: block;
 }
 
+.darkMode {
+  background-color: #121212;
+  color: white;
+}
+
 main h2 {
   margin: 25px;
   text-align: center;
@@ -112,6 +117,14 @@ main h2 {
   text-align: left;
   padding: 10px;
   font-size: 16px;
+}
+
+.darkMode a {
+  color: white;
+}
+
+.darkMode a:visited {
+  color: white;
 }
 
 .card p {
