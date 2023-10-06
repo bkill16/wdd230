@@ -118,4 +118,5 @@ header {
 .event-card {
     text-align: center;
     margin-bottom: 50px;
+    padding: 5px;
 }
