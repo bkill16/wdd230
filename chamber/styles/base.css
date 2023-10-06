@@ -60,6 +60,10 @@ header {
 	display: block;
 }
 
+#home-hero {
+    width: 100%;
+}
+
 #home-banner {
     background-color: #6D4C3D;
     color: white;
