@@ -15,7 +15,7 @@ p, li {
 }
 
 header {
-    background-color: #0085CD;
+    background-color: #3a5a40;
     color: white;
     text-align: center;
     font-size: 1rem;
@@ -28,8 +28,9 @@ header {
 }
 
 .card h3{
-    background-color: #FFCB03;
+    background-color: #6D4C3D;
     padding: 5px;
+    color: white;
 }
 
 .card p {
@@ -54,35 +55,35 @@ header {
     justify-content: center;
 }
 
-#blue {
+#green {
     height: 50px;
     width: 50px;
     border: solid 1px black;
-    background-color: #0085CD;
+    background-color: #3a5a40;
     margin: 5px;
 }
 
-#white {
+#tan {
     height: 50px;
     width: 50px;
     border: solid 1px black;
-    background-color: white;
+    background-color: #C5AFA4;
     margin: 5px;
 }
 
-#yellow {
+#brown {
     height: 50px;
     width: 50px;
     border: solid 1px black;
-    background-color: #FFCB03;
+    background-color: #6D4C3D;
     margin: 5px;
 }
 
-#red {
+#light-green {
     height: 50px;
     width: 50px;
     border: solid 1px black;
-    background-color: #FF5062;
+    background-color: #A3B18A;
     margin: 5px;
 }
 
@@ -95,7 +96,7 @@ header {
 }
 
 .red-title {
-    background-color: #FF5062;
+    background-color: #A3B18A;
     text-align: center;
     padding: 25px;
     margin-top: 10px;

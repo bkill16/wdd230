@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+header {
+    background-color: #3a5a40;
+}
+
+#logo {
+    margin: 10px;
+}
+
+#menu {
+	font-size: 2rem;
+	padding: 5px;
+	background-color: #3a5a40;
+	color: white;
+	position: absolute;
+	right: .55rem;
+    top: .55rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #C5AFA4;
+}
+.navigation li {
+	display: none;
+}
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.navigation li a:hover {
+	background-color: #6D4C3D;
+	color: white;
+	font-weight: 700;
+}
+
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+#home-banner {
+    background-color: #6D4C3D;
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1px;
+}
+
+#weather-card {
+    margin: 25px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#join-info {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+}
+
+#join-button {
+    display: flex;
+    justify-content: center;
+}
+
+#join-button button {
+    background-color: #3a5a40;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 10px;
+}
