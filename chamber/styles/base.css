@@ -20,6 +20,7 @@ header {
 	position: absolute;
 	right: .55rem;
     top: .55rem;
+    border: none;
 }
 
 #menu::before {
@@ -70,6 +71,8 @@ header {
     text-align: center;
     font-size: 1.1rem;
     padding: 1px;
+    margin-top: -4px;
+    padding-bottom: 4px;
 }
 
 #weather-card {
@@ -95,6 +98,7 @@ header {
     font-size: 2rem;
     padding: 10px;
     margin: 10px;
+    border: none;
 }
 
 #events-container{
@@ -104,7 +108,7 @@ header {
 
 #events-container h1 {
     text-align: center;
-    padding: 10px;
+    padding-top: 15px;
 }
 
 .img-placeholder {
@@ -115,8 +119,35 @@ header {
     margin: 0 auto;
 }
 
-.event-card {
+.home-card {
     text-align: center;
     margin-bottom: 50px;
-    padding: 5px;
+}
+
+.home-card h2 {
+    padding: 10px;
+}
+
+.spotlight-button {
+    background-color: #6D4C3D;
+    color: white;
+    font-size: 1.25rem;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+#spotlights-container h1 {
+    text-align: center;
+}
+
+footer {
+    background-color: #3a5a40;
+    color: white;
+    padding: 10px;
+}
+
+.footerCopy {
+    text-align: center;
+    padding-top: 15px;
 }
