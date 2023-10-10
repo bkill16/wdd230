@@ -88,6 +88,11 @@ header h1 {
   color: white;
 }
 
+.darkMode .card {
+  box-shadow: none;
+  border: solid white 1px;
+}
+
 main h2 {
   margin: 25px;
   text-align: center;
