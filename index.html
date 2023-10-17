@@ -27,7 +27,20 @@
   </head>
   <body class="darkMode">
     <header>
-      <img src="./home-page/images/home-page-pic.png" alt="My Pic" />
+      <picture>
+        <source
+          srcset="./home-page/images/home-page-me.webp"
+          media="(max-width: 400px)"
+          width="150"
+          height="200"
+        />
+        <img
+          src="./home-page/images/home-page-me.webp"
+          alt="Brenleigh's Pic"
+          width="175"
+          height="225"
+        />
+      </picture>
       <h1>Brenleigh Killpack</h1>
       <button id="mode">Light/Dark Mode</button>
     </header>
@@ -41,6 +54,29 @@
       </ul>
     </nav>
     <main>
+      <picture>
+        <source
+          srcset="./home-page/images/hero-small.webp"
+          media="(max-width: 500px)"
+          loading="lazy"
+        />
+        <source
+          srcset="./home-page/images/hero-medium.webp"
+          media="(max-width: 1000px)"
+          loading="lazy"
+        />
+        <img
+          class="hero-img"
+          src="./home-page/images/hero-large.webp"
+          alt="Idaho Falls Temple"
+          width="1500"
+          height="750"
+          loading="lazy"
+        />
+      </picture>
+      <div id="hero-label">
+        <p>Idaho Falls Temple</p>
+      </div>
       <h2>WDD 230: Web Frontend Development</h2>
       <div class="container">
         <section class="card">
@@ -78,14 +114,23 @@
             <li>Lesson 07:</li>
           </ul>
         </section>
-        <section class="card" id="information">
+        <section class="card">
           <h3>Information</h3>
           <p>Rexburg, Idaho</p>
           <p>Weather</p>
-          <p>Page Visits:</p>
+          <p>Page Visits: <span id="visits"></span></p>
         </section>
       </div>
     </main>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23198.567428017486!2d-112.15462859291839!3d43.380768192919795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5354f8e56d98f58f%3A0xc7a79ff19600cbec!2sShelley%2C%20ID%2083274!5e0!3m2!1sen!2sus!4v1697497031372!5m2!1sen!2sus"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
     <footer>
       <div id="footerCopyRight">
         <p>
@@ -99,5 +144,6 @@
     <script src="./home-page/scripts/darkMode.js"></script>
     <script src="./home-page/scripts/hamMenu.js"></script>
     <script src="./home-page/scripts/getDates.js"></script>
+    <script src="./home-page/scripts/pageVisits.js"></script>
   </body>
 </html>
