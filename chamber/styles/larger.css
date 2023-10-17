@@ -1,5 +1,21 @@
 @media (min-width: 640px) {
-  
+  #menu {
+    display: none;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  .navigation li {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  .navigation a {
+    margin: 0 auto;
+  }
 
   #home-banner {
     margin-top: -5px;
