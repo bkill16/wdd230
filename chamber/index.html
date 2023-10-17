@@ -46,11 +46,10 @@
       </nav>
     </header>
     <main>
-      <img
-        id="home-hero"
-        src="./images/home-hero-og.jpg"
-        alt="Grand Teton National Park"
-      />
+      <picture>
+        <source  id="home-hero" srcset="./images/home-hero-small.webp" media="(max-width: 500px)" width="500px" height="500px">
+        <img id="home-hero" src="./images/home-hero-large.webp" alt="Grand Tetons" width="1280px" height="">
+      </picture>
       <div id="home-banner">
         <h1>Jackson Hole Chamber of Commerce</h1>
       </div>
