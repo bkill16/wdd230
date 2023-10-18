@@ -21,7 +21,7 @@ header {
   color: white;
   position: absolute;
   right: 0.55rem;
-  top: 0.55rem;
+  top: .25rem;
   border: none;
 }
 
@@ -71,7 +71,7 @@ header {
   background-color: #6d4c3d;
   color: white;
   text-align: center;
-  font-size: 0.66rem;
+  font-size: 1.78rem;
   padding: 1px;
   margin-top: -4px;
   padding-bottom: 4px;
