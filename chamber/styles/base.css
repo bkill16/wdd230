@@ -113,6 +113,14 @@ header {
   padding-top: 15px;
 }
 
+.events-img {
+    border: solid 1px black;
+}
+
+#spotlight-title {
+    text-align: center;
+}
+
 .img-placeholder {
   width: 325px;
   height: 325px;
