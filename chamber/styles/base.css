@@ -150,7 +150,8 @@ header {
   margin-right: 10px;
 }
 
-.spotlight-txt a button {
+.spotlight-button {
+  text-align: center;
   color: white;
   background-color: #6d4c3d;
   font-size: 1.25rem;
@@ -158,6 +159,14 @@ header {
   padding: 5px;
   border: solid 1px black;
   border-radius: 5px;
+}
+
+.spotlight-button a {
+  text-decoration: none;
+}
+
+.spotlight-button a:visited {
+  color: white;
 }
 
 .home-card {
