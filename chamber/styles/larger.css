@@ -35,6 +35,20 @@
     left: 15px;
   }
 
+  #weather-card {
+    margin-top: -3px;
+    font-size: 1.8rem;
+  }
+
+  #join-card {
+    padding: 50px;
+    font-size: 1.6rem;
+  }
+
+  #join-card button {
+    margin-top: 50px;
+  }
+
   #events-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -44,6 +58,15 @@
   #events-container h1 {
     grid-column: 2/3;
     padding-bottom: 10px;
+    font-size: 2rem;
+  }
+
+  #events-container h2 {
+    font-size: 1.5em;
+  }
+
+  #events-container p {
+    font-size: 1.15rem;
   }
 
   #event1 {
@@ -56,5 +79,47 @@
 
   #event3 {
     grid-column: 3/4;
+  }
+
+  #spotlight-title {
+    font-size: 2.5rem;
+    margin-top: 50px;
+  }
+
+  #spotlights-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+  }
+
+  .spotlight-img {
+    margin: 50px;
+  }
+
+  .spotlight-txt {
+    margin: 50px;
+  }
+
+  .spotlight-txt h2 {
+    font-size: 1.75rem;
+    padding-bottom: 25px;
+  }
+
+  .spotlight-txt p {
+    font-size: 1.75rem;
+  }
+
+  .spotlight-txt a button {
+    color: white;
+    background-color: #6d4c3d;
+    font-size: 1.75rem;
+    margin-left: 125px;
+    margin-top: 50px;
+    padding: 10px;
+    border: solid 1px black;
+    border-radius: 5px;
+  }
+
+  footer {
+    font-size: 1.25rem;
   }
 }
