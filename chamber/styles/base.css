@@ -152,7 +152,6 @@ header {
 
 .spotlight-button {
   text-align: center;
-  color: white;
   background-color: #6d4c3d;
   font-size: 1.25rem;
   margin-top: 10px;
@@ -163,6 +162,7 @@ header {
 
 .spotlight-button a {
   text-decoration: none;
+  color: white;
 }
 
 .spotlight-button a:visited {
