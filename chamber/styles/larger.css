@@ -136,10 +136,6 @@
     margin: 15px;
   }
 
-  .right picture figcaption {
-    text-align: center;
-  }
-
   .visits, .weather, .attractions, .lodging, .eating {
     border: solid 1px black;
     margin-top: 10px;
@@ -157,7 +153,6 @@
   }
 
   .weather h2 {
-    text-align: center;
     padding: 10px;
     font-size: 2rem;
   }
@@ -168,7 +163,6 @@
   }
 
   .attractions h2 {
-    text-align: center;
     padding: 10px;
     font-size: 2rem;
   }
@@ -189,20 +183,16 @@
   }
 
   .lodging h2 {
-    text-align: center;
     font-size: 2rem;
     padding: 10px;
   }
 
   .lodging h3 {
-    text-align: center;
     font-size: 1.25rem;
     padding: 10px;
   }
 
   .lodging ul li {
-    text-align: center;
-    list-style: none;
     font-size: 1.1rem;
     padding: 18px;
   }
@@ -213,7 +203,6 @@
   }
 
   .eating h2 {
-    text-align: center;
     font-size: 2rem;
     padding: 10px;
   }
