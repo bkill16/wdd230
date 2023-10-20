@@ -182,7 +182,45 @@ header {
   margin: 5px;
 }
 
+.visits, .weather, .attractions, .lodging, .eating {
+  text-align: center;
+  margin: 25px;
+  border: solid 1px black;
+}
 
+.right {
+  text-align: center;
+}
+
+.right picture figcaption {
+  padding-bottom: 5px;
+}
+
+.attractions ul li, .lodging ul li {
+  list-style-type: none;
+}
+
+.weather h2, .attractions h2, .lodging h2, .eating h2 {
+  background-color: #6d4c3d;
+  color: white;
+  padding: 5px;
+}
+
+.attractions h3 , .lodging h3, .eating h3 {
+  padding: 5px;
+}
+
+.attractions ul li {
+  padding: 7px;
+}
+
+.lodging ul li {
+  padding: 10px;
+}
+
+.restaraunt {
+  padding: 5px;
+}
 
 footer {
   background-color: #3a5a40;
@@ -194,3 +232,22 @@ footer {
   text-align: center;
   padding-top: 15px;
 }
+
+.map iframe {
+  height: 350px;
+  width: 500px;
+  margin-left: 45px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .map iframe {
+    display: none;
+  }
+}
+
+
+
+
+
+
