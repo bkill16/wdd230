@@ -127,6 +127,10 @@
     color: white;
   }
 
+  .discover-title {
+    font-size: 5rem;
+  }
+
   .discover-grid {
     display: grid;
     grid-template-columns: 6fr 7fr;
@@ -136,10 +140,15 @@
     margin: 15px;
   }
 
-  .visits, .weather, .attractions, .lodging, .eating {
+  .visits, .weather, .stats, .attractions, .lodging, .eating {
     border: solid 1px black;
     margin-top: 10px;
     margin-left: 45px;
+  }
+
+  .weather h2, .stats h2, .attractions h2, .lodging h2, .eating h2 {
+    padding: 10px;
+    font-size: 2rem;
   }
 
   .visits {
@@ -152,19 +161,14 @@
     width: 500px;
   }
 
-  .weather h2 {
-    padding: 10px;
-    font-size: 2rem;
+  .stats {
+    height: 350px;
+    width: 500px;
   }
 
   .attractions {
     height: 750px;
     width: 500px;
-  }
-
-  .attractions h2 {
-    padding: 10px;
-    font-size: 2rem;
   }
 
   .attractions h3 {
@@ -182,11 +186,6 @@
     width: 500px;
   }
 
-  .lodging h2 {
-    font-size: 2rem;
-    padding: 10px;
-  }
-
   .lodging h3 {
     font-size: 1.25rem;
     padding: 10px;
@@ -200,11 +199,6 @@
   .eating {
     height: 383px;
     width: 500px;
-  }
-
-  .eating h2 {
-    font-size: 2rem;
-    padding: 10px;
   }
 
   .restaraunt {
