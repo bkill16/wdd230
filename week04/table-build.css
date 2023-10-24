@@ -1,0 +1,42 @@
+table caption {
+    caption-side: bottom;
+    padding: 5px;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid black;
+    border-collapse: collapse;
+}
+
+.header {
+    background-color: black;
+    color: white;
+}
+
+#blank {
+    background-color: black;
+    color: black;
+}
+
+.gray-header {
+    background-color: #5A5A5A;
+    color: white;
+}
+
+th, td {
+    border: thin solid black;
+    padding: 15px;
+}
+
+th {
+    font-size: larger;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
