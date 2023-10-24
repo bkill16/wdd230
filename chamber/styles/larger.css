@@ -26,27 +26,24 @@
   }
 
   #home-title {
-    background-color: transparent;
-    color: black;
-    font-family: 'Permanent Marker';
-    font-size: 4.25rem;
-    position: absolute;
-    top: 725px;
-    left: 15px;
+    font-size: 4.5rem;
   }
 
   #weather-card {
-    margin: -4px;
+    margin-top: -4px;
     font-size: 1.8rem;
+    width: 100%;
   }
 
   #join-card {
     padding: 50px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   #join-card button {
-    margin-top: 50px;
+    margin-top: 55px;
+    font-size: 2.5rem;
+    padding: 20px;
   }
 
   #events-container {

@@ -71,29 +71,22 @@ header {
   width: 100%;
 }
 
-#home-title {
-  background-color: #6d4c3d;
-  color: white;
-  text-align: center;
-  font-size: 1.78rem;
-  padding: 5px;
-  margin-top: -4px;
-  padding-bottom: 4px;
-}
-
 #weather-card {
   background-color: #c5afa4;
   padding: 10px;
-  margin-top: -19px;
+  margin-top: -3px;
   text-align: center;
   font-size: 1.55rem;
   width: 100%;
 }
 
-#join-info {
-  font-size: 1.5rem;
+#title-container {
   text-align: center;
-  margin: 10px;
+}
+
+#home-title {
+  font-family: 'Permanent Marker';
+  font-size: 1.9rem;
 }
 
 #join-card {
@@ -108,9 +101,9 @@ header {
   color: white;
   font-size: 2rem;
   padding: 10px;
-  margin: 10px;
-  border: solid .5px black;
-  border-radius: 5px;
+  margin-top: 35px;
+  border: solid .5px #3a5a40;
+  border-radius: 10px;
 }
 
 #events-container {
@@ -131,6 +124,7 @@ header {
 
 .events-img {
     border: solid 1px black;
+    border-radius: 15px;
 }
 
 #spotlight-title {
