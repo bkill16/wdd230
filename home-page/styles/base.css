@@ -43,6 +43,7 @@ header h1 {
   color: #000;
   position: absolute;
   right: 1rem;
+  z-index: 1000;
 }
 
 #menu::before {
