@@ -210,8 +210,16 @@ header {
   padding: 5px;
 }
 
+.stats h3 {
+  padding: 9px;
+}
+
 .attractions h3 , .lodging h3, .eating h3 {
   padding: 5px;
+}
+
+.weather h2, .weather h3, .weather p, .weather h4 {
+  padding: 1.5px;
 }
 
 .attractions ul li {
