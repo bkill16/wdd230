@@ -135,13 +135,13 @@
     margin: 15px;
   }
 
-  .visits, .weather, .stats, .attractions, .lodging, .eating {
+  .visits, .weather, .popular, .attractions, .lodging, .eating {
     border: solid 1px black;
     margin-top: 10px;
     margin-left: 45px;
   }
 
-  .weather h2, .stats h2, .attractions h2, .lodging h2, .eating h2 {
+  .weather h2, .popular h2, .attractions h2, .lodging h2, .eating h2 {
     padding: 10px;
     font-size: 2rem;
   }
@@ -156,9 +156,13 @@
     width: 500px;
   }
 
-  .stats {
+  .popular {
     height: 350px;
     width: 500px;
+  }
+
+  .popular p {
+    font-size: 1.25rem;
   }
 
   .attractions {

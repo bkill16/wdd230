@@ -185,7 +185,7 @@ main h1 {
 
 }
 
-.visits, .weather, .stats, .attractions, .lodging, .eating {
+.visits, .weather, .popular, .attractions, .lodging, .eating {
   text-align: center;
   margin: 25px;
   border: solid 1px black;
@@ -203,14 +203,15 @@ main h1 {
   list-style-type: none;
 }
 
-.weather h2, .stats h2, .attractions h2, .lodging h2, .eating h2 {
+.weather h2, .popular h2, .attractions h2, .lodging h2, .eating h2 {
   background-color: #6d4c3d;
   color: white;
   padding: 5px;
 }
 
-.stats h3 {
+.popular p {
   padding: 9px;
+  font-size: 1rem;
 }
 
 .attractions h3 , .lodging h3, .eating h3 {
