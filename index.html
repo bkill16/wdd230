@@ -1,154 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brenleigh Killpack - WDD 230 - Web Frontend Development</title>
-    <meta name="description" content="WDD 230 Course Portal" />
-    <meta name="author" content="Brenleigh Killpack" />
-    <meta
-      property="og:title"
-      content="Brenleigh Killpack - WDD 230 - Web Frontend Development"
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://images.squarespace-cdn.com/content/v1/591f55e39f74565ba4db26d8/1496178430380-4JV9F16G3MKV4RSTZMVH/Spud+Day--Parade0068.jpeg"
-    />
-    <meta property="og:url" content="https://bkill16.github.io/wdd230/" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./home-page/styles/normalize.css" />
-    <link rel="stylesheet" href="./home-page/styles/base.css" />
-    <link rel="stylesheet" href="./home-page/styles/larger.css" />
-    <link rel="icon" href="favicon.ico" />
-  </head>
-  <body class="darkMode">
+
+    <meta name="description" content="WDD 230 Course Portal">
+    <meta name="author" content="Brenleigh Killpack">
+
+    <meta property="og:title" content="Brenleigh Killpack - WDD 230 Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/591f55e39f74565ba4db26d8/1496178430380-4JV9F16G3MKV4RSTZMVH/Spud+Day--Parade0068.jpeg">
+    <meta property="og:url" content="https://bkill16.github.io/wdd230/">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&display=swap">
+    <link rel="stylesheet" href="./home-page/styles/base.css">
+    <link rel="stylesheet" href="./home-page/styles/larger.css">
+    <link rel="stylesheet" href="./home-page/styles/normalize.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="darkMode">
     <header>
-      <picture>
-        <source
-          srcset="./home-page/images/home-page-me.webp"
-          media="(max-width: 400px)"
-          width="150"
-        />
-        <img
-          src="./home-page/images/home-page-me.webp"
-          alt="Brenleigh's Pic"
-          width="175"
-        />
-      </picture>
-      <h1>Brenleigh Killpack</h1>
-      <button id="mode">Light/Dark Mode</button>
+        <picture>
+            <source srcset="./home-page/images/home-page-me.webp" media="(max-width: 400px)" width="150">
+            <img src="./home-page/images/home-page-me.webp" alt="Brenleigh's Pic" width="175">
+        </picture>
+        <h1>Brenleigh Killpack</h1>
+        <button id="mode">Light/Dark Mode</button>
     </header>
     <nav>
-      <button id="menu"></button>
-      <ul class="navigation">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./chamber/index.html">Chamber</a></li>
-        <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
-        <li><a href="">Form</a></li>
-      </ul>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./chamber/index.html">Chamber</a></li>
+            <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
     </nav>
     <main>
-      <div id="hero">
-        <picture>
-          <source
-            srcset="./home-page/images/hero-small.webp"
-            media="(max-width: 500px)"
-          />
-          <source
-            srcset="./home-page/images/hero-medium.webp"
-            media="(max-width: 1000px)"
-          />
-          <img
-            class="hero-img"
-            src="./home-page/images/hero-large.webp"
-            alt="Idaho Falls Temple"
-            width="1500"
-            height="750"
-          />
-        </picture>
-        <div id="hero-label">
-          <p>Idaho Falls Temple</p>
+        <div id="hero">
+            <picture>
+                <source srcset="./home-page/images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="./home-page/images/hero-medium.webp" media="(max-width: 1000px)">
+                <img class="hero-img" src="./home-page/images/hero-large.webp" alt="Idaho Falls Temple"
+                width="1500" height="750">
+            </picture>
+            <div id="hero-label">
+                <p>Idaho Falls Temple</p>
+            </div>
         </div>
-      </div>
-      <h2>WDD 230: Web Frontend Development</h2>
-      <div class="container">
-        <section class="card">
-          <h3>Learning Activities</h3>
-          <ul>
-            <li>
-              Lesson 01:
-              <a href="./week01/holygrail.html">Layout</a><span> | </span>
-              <a href="./week01/media-query.html">Media Query</a
-              ><span> | </span>
-              <a href="https://codepen.io/bkill16/pen/YzdxzmQ"
-                >Applied JavaScript</a
-              >
-            </li>
-            <li>
-              Lesson 02: <a href="./week02/design.html">Design Principles</a
-              ><span> | </span> <a href="./week02/bom.html">DOM Manipulation</a
-              ><span> | </span>
-              <a href="https://codepen.io/bkill16/pen/vYvrxXz"
-                >Responsive Navigation</a
-              >
-            </li>
-            <li>
-              Lesson 03: <a href="./week03/images/landscape2.webp">WebP</a
-              ><span> | </span>
-              <a href="./week03/lazy-loading.html">Lazy Loading</a
-              ><span> | </span
-              ><a href="./week03/responsive-images.html">Responsive Images</a
-              ><span> | </span
-              ><a href="./week03/local-storage.html">Local Storage</a>
-            </li>
-            <li>
-              Lesson 04:
-              <a href="https://codepen.io/bkill16/pen/vYbOYxv?editors=1100"
-                >CSS Pseudo Classes</a
-              ><span> | </span
-              ><a href="./week04/images/week04-combinators.png"
-                >CSS Combinators</a
-              ><span> | </span><a href="./week04/table-build.html">HTML Tables</a><span> | </span>
-            </li>
-            <li>Lesson 05:</li>
-            <li>Lesson 06:</li>
-            <li>Lesson 07:</li>
-          </ul>
-        </section>
-        <section class="card">
-          <h3>Information</h3>
-          <p>Rexburg, Idaho</p>
-          <p>Weather</p>
-          <p>Page Visits: <span id="visits"></span></p>
-        </section>
-      </div>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <div class="container">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>
+                        Lesson 01: <a href="./week01/holygrail.html">Layout</a><span> | </span>
+                        <a href="./week01/media-query.html">Media Queries</a><span> | </span>
+                        <a href="https://codepen.io/bkill16/pen/YzdxzmQ">Applied JavaScript</a>
+                    </li>
+                    <li>
+                        Lesson 02: <a href="./week02/design.html">Design Principles</a><span> | </span>
+                        <a href="./week02/bom.html">DOM Manipulation</a><span> | </span>
+                        <a href="https://codepen.io/bkill16/pen/vYvrxXz">Responsive Navigation</a>
+                    </li>
+                    <li>
+                        Lesson 03: <a href="./week03/images/landscape2.webp">WebP</a><span> | </span>
+                        <a href="./week03/lazy-loading.html">Lazy Loading</a><span> | </span>
+                        <a href="./week03/responsive-images.html">Responsive Images</a><span> | </span>
+                        <a href="./week03/local-storage.html">Local Storage</a>
+                    </li>
+                    <li>
+                        Lesson 04: <a href="https://codepen.io/bkill16/pen/vYbOYxv?editors=1100">CSS 
+                            Pseudo Classes</a><span> | </span>
+                        <a href="./week04/images/week04-combinators.png">CSS Combinators</a><span> | </span>
+                        <a href="./week04/table-build.html">HTML Tables</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="card">
+                <h3>Information</h3>
+                <p>Rexburg, Idaho</p>
+                <p>Weather</p>
+                <p>Page Visits: <span id="visits"></span></p>
+            </section>
+        </div>
     </main>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23198.567428017486!2d-112.15462859291839!3d43.380768192919795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5354f8e56d98f58f%3A0xc7a79ff19600cbec!2sShelley%2C%20ID%2083274!5e0!3m2!1sen!2sus!4v1697497031372!5m2!1sen!2sus"
-      width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23198.567428017486!2d-112.15462859291839!3d43.380768192919795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5354f8e56d98f58f%3A0xc7a79ff19600cbec!2sShelley%2C%20ID%2083274!5e0!3m2!1sen!2sus!4v1697497031372!5m2!1sen!2sus"
+    width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
     <footer>
-      <div id="footerCopyRight">
-        <p>
-          &copy; <span id="date"></span> - Brenleigh Killpack - United States
-        </p>
-      </div>
-      <div id="footerDate">
-        <p>Last Modified: <span id="last-modified"></span></p>
-      </div>
+        <div id="footerCopyRight">
+            <p>&copy; <span id="date"></span> | Brenleigh Killpack | United States</p>
+        </div>
+        <div id="footerDate">
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
     </footer>
     <script src="./home-page/scripts/darkMode.js"></script>
-    <script src="./home-page/scripts/hamMenu.js"></script>
     <script src="./home-page/scripts/getDates.js"></script>
+    <script src="./home-page/scripts/hamMenu.js"></script>
     <script src="./home-page/scripts/pageVisits.js"></script>
-  </body>
+</body>
 </html>
