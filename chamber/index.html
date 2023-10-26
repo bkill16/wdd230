@@ -1,271 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackson Hole Chamber of Commerce | Home</title>
-    <meta
-      name="description"
-      content="Home page for the Jackson Hole Chamber of Commerce"
-    />
-    <meta name="author" content="Brenleigh Killpack" />
-    <meta
-      property="og:title"
-      content="Jackson Hole Chamber of Commerce | Home"
-    />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://cdn4.picryl.com/photo/2016/01/01/one-of-four-large-arches-of-elk-antler-in-the-town-square-of-jackson-hole-wyoming-be953a-1024.jpg"
-    />
-    <meta
-      property="og:url"
-      content="https://bkill16.github.io/wdd230/chamber/index.html"
-    />
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/base.css" />
-    <link rel="stylesheet" href="./styles/larger.css" />
-    <link rel="icon" href="/chamber/favicon-chamber.ico" />
-  </head>
-  <body>
+
+    <meta name="description" content="Home page for Jackson Hole Chamber of Commerce">
+    <meta name="author" content="Brenleigh Killpack">
+
+    <meta property="og:title" content="Jackson Hole Chamber of Commerce | Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn4.picryl.com/photo/2016/01/01/one-of-four-large-arches-of-elk-antler-in-the-town-square-of-jackson-hole-wyoming-be953a-1024.jpg">
+    <meta property="og:url" content="https://bkill16.github.io/wdd230/chamber/index.html">
+
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
     <header>
-      <picture>
-        <source
-          srcset="./images/logo-test.webp"
-          media="(max-width: 500px)"
-          width="200"
-        />
-        <img id="logo" src="./images/logo-test.webp" alt="Logo" width="375" />
-      </picture>
-      <nav>
-        <button id="menu"></button>
-        <ul class="navigation">
-          <li>
-            <a href="./index.html">Home</a>
-            <a href="./discover.html">Discover</a>
-            <a href="">Directory</a>
-            <a href="">Join</a>
-          </li>
-        </ul>
-      </nav>
+        <picture>
+            <source srcset="./images/logo-test.webp" media="(max-width: 500px)" width="200">
+            <img id="logo" src="./images/logo-test.webp" alt="Logo" width="375">
+        </picture>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li>
+                    <a href="./index.html">Home</a>
+                    <a href="./discover.html">Discover</a>
+                    <a href="">Directory</a>
+                    <a href="">Join</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <picture>
-        <source
-          srcset="./images/home-hero-small.webp"
-          media="(max-width: 500px)"
-          width="500"
-          height="500"
-        />
-        <img
-          id="home-hero"
-          src="./images/home-hero-large.webp"
-          alt="Grand Tetons"
-          width="1280"
-          height="725"
-        />
-      </picture>
-      <div id="weather-card">
-        <p>Weather - 🌞 55°F</p>
-      </div>
-      <div id="title-container">
-        <h1 id="home-title">Jackson Hole Chamber of Commerce</h1>
-      </div>
-      <div id="join-card">
-        <p>
-          Since 1946, the Jackson Hole Chamber of Commerce has worked to
-          strengthen the business atmosphere and community throughout the
-          valley. As a member, you'll gain access to invaluable networking
-          opportunities, resources, and support to help your business thrive.
-        </p>
-        <button>Join Now!</button>
-      </div>
-      <div id="events-container">
-        <h1>Upcoming Events</h1>
-        <section id="event1" class="home-card">
-          <picture>
-            <source
-              srcset="./images/event1-img.webp"
-              media="(max-width: 500px)"
-              width="250"
-              height="250"
-            />
-            <img
-              class="events-img"
-              src="./images/event1-img.webp"
-              alt="Social Media Icons"
-              width="300"
-              height="300"
-              loading="lazy"
-            />
-          </picture>
-          <h2>Social Media Marketing Seminar</h2>
-          <p>October 21st, 7:00pm</p>
-          <p>The Blue Lion</p>
-          <p>160 N Millward St, Jackson, WY 83001</p>
-        </section>
-        <section id="event2" class="home-card">
-          <picture>
-            <source
-              srcset="./images/event2-img.webp"
-              media="(max-width: 500px)"
-              width="250"
-              height="250"
-            />
-            <img
-              class="events-img"
-              src="./images/event2-img.webp"
-              alt="Mountains"
-              width="300"
-              height="300"
-              loading="lazy"
-            />
-          </picture>
-          <h2>2023 Tourism Report</h2>
-          <p>November 16th, 6:30pm</p>
-          <p>Town Hall</p>
-          <p>150 E Pearl Ave, Jackson, WY 83001</p>
-        </section>
-        <section id="event3" class="home-card">
-          <picture>
-            <source
-              srcset="./images/event3-img.webp"
-              media="(max-width: 500px)"
-              width="250"
-              height="250"
-            />
-            <img
-              class="events-img"
-              src="./images/event3-img.webp"
-              alt="Christmas Lights"
-              width="300"
-              height="300"
-              loading="lazy"
-            />
-          </picture>
-          <h2>Tree Lighting Festival</h2>
-          <p>November 24, 5:00pm</p>
-          <p>Town Square</p>
-          <p>10 E Broadway Ave, Jackson, WY 83001</p>
-        </section>
-      </div>
-      <h1 id="spotlight-title">Business Spotlights</h1>
-      <div id="spotlights-container">
         <picture>
-          <source
-            srcset="./images/spotlight-1.webp"
-            media="(max-width: 500px)"
-            width="300"
-            height="300"
-          />
-          <img
-            class="spotlight-img"
-            src="./images/spotlight-1.webp"
-            alt="Skiing Grand Targhee Resort"
-            width="450"
-            height="450"
-            loading="lazy"
-          />
+            <source srcset="./images/home-hero-small.webp" media="(max-width: 500px)" width="500" 
+            height="500">
+            <img id="home-hero" src="./images/home-hero-large.webp" alt="Grand Tetons" width="1280" 
+            height="725">
         </picture>
-        <section class="spotlight-txt">
-          <h2>Grand Targhee Resort</h2>
-          <p>
-            Housed in the Teton Mountains, Grand Targhee Resort provides all
-            kinds of fun. This resort provides world-class skiing and
-            snowboarding on some of the best snow in the area during the winter,
-            and rugged mountain biking during the summer months. Enjoy your
-            favorite extreme sports surrounded by some of the most beautiful
-            mountains on the planet.
-          </p>
-          <div class="spotlight-button">
-            <a
-              target="_blank"
-              href="https://www.grandtarghee.com/?gclid=CjwKCAjwp8OpBhAFEiwAG7NaEh58Jborc7jxtWpY545PabfXWVc8QllbIQAVydIRQs8C22cd9hYfpBoCGwUQAvD_BwE"
-              >View Business</a
-            >
-          </div>
-        </section>
-        <picture>
-          <source
-            srcset="./images/spotlight-2.webp"
-            media="(max-width: 500px)"
-            width="300"
-            height="300"
-          />
-          <img
-            class="spotlight-img"
-            src="./images/spotlight-2.webp"
-            alt="Snake River Roasting Company"
-            width="450"
-            height="450"
-            loading="lazy"
-          />
-        </picture>
-        <section class="spotlight-txt">
-          <h2>Snake River Roasting Company</h2>
-          <p>
-            Inspired by Jackson Hole, this flavorful coffee will fuel your next
-            adventure. The Snake River Roasting Company takes pride in roasting
-            coffee beans to perfection. So much passion and time goes into
-            creating the very best flavors.
-          </p>
-          <div class="spotlight-button">
-            <a
-              target="_blank"
-              href="https://www.snakeriverroastingco.com/?utm_term=snake%20river%20roasting%20co&utm_campaign=SS+%7C+Branded&utm_source=adwords&utm_medium=ppc&hsa_acc=2624038396&hsa_cam=19994590470&hsa_grp=147777150629&hsa_ad=607070570561&hsa_src=g&hsa_tgt=kwd-2009719993125&hsa_kw=snake%20river%20roasting%20co&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEliWbbvJlI0-zUaGZp_kT-JyRBECPce45jBlEOYi77bKt5FFn-KU8RoCKcQQAvD_BwE"
-              >View Business</a
-            >
-          </div>
-        </section>
-        <picture>
-          <source
-            srcset="./images/spotlight-3.webp"
-            media="(max-width: 500px)"
-            width="300"
-            height="300"
-          />
-          <img
-            class="spotlight-img"
-            src="./images/spotlight-3.webp"
-            alt="River Rafting"
-            width="450"
-            height="450"
-            loading="lazy"
-          />
-        </picture>
-        <section class="spotlight-txt">
-          <h2>Dave Hansen Whitewater and Scenic River Trips</h2>
-          <p>
-            Expereince Jackson Hole with nature's roller coaster. If you're
-            looking for a little thrill, Dave Hansen provides fun rafting trips
-            for all ages and levels of experience. It's a great way to
-            experience Jackson Hole-if you're willing to get a little wet!
-          </p>
-          <div class="spotlight-button">
-            <a
-              target="_blank"
-              href="https://www.davehansenwhitewater.com/?utm_source=Adwords&utm_medium=cpc&utm_campaign=Campaign%3A%20local%20text%20BrComp&gad=1&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEsgqMrhxVA7GHHASKWzqAIS2kzjcSvEd7t2WM_xjUjGgd8CJK5B4uRoC-7kQAvD_BwE"
-              >View Business</a
-            >
-          </div>
-        </section>
-      </div>
-      <footer>
-        <div id="footerContact">
-          <p>Jackson Hole Chamber of Commerce</p>
-          <p>123 Moose Road Way</p>
-          <p>Jackson, WY 83002</p>
-          <p>Phone: (123)456-7890</p>
+        <div id="weather-card">
+            <p>Weather - 🌞 55°F</p>
         </div>
-        <div class="footerCopy">
-          <p>&copy; <span id="date"></span> | Brenleigh Killpack | WDD 230</p>
+        <h1>Jackson Hole Chamber of Commerce</h1>
+        <div id="join-card">
+            <p>Since 1946, the Jackson Hole Chamber of Commerce has worked to strengthen the business
+                atmosphere and community throughout the valley. As a member, you'll gain access to 
+                invaluable networking opportunities, resources, and support to help your business 
+                thrive.
+            </p>
+            <button>Join Now!</button>
         </div>
-        <div class="footerCopy">
-          <p>Last Modified: <span id="last-modified"></span></p>
+        <div id="events-container">
+            <h1>Upcoming Events</h1>
+            <section id="event1" class="home-card">
+                <picture>
+                    <source srcset="./images/event1-img.webp" media="(max-width: 500px)" width="250" 
+                    height="250">
+                    <img class="events-img" src="./images/event1-img.webp" alt="Social Media Icons"
+                    width="300" height="300" loading="lazy">
+                </picture>
+                <h2>Social Media Marketing Seminar</h2>
+                <p>October 21st, 7:00pm</p>
+                <p>The Blue Lion</p>
+                <p>160 N Millward St, Jackson, WY 83001</p>
+            </section>
+            <section id="event2" class="home-card">
+                <picture>
+                    <source srcset="./images/event2-img.webp" media="(max-width): 500px" width="250"
+                    height="250">
+                    <img class="events-img" src="./images/event2-img.webp" alt="Mountains" width="300"
+                    height="300" loading="lazy">
+                </picture>
+                <h2>2023 Tourism Report</h2>
+                <p>November 16th, 6:30pm</p>
+                <p>Town Hall</p>
+                <p>150 E Pearl Ave, Jackson, WY 83001</p>
+            </section>
+            <section id="event3" class="home-card">
+                <picture>
+                    <source srcset="./images/events3-img.webp" media="(max-width): 500px" width="250"
+                    height="250">
+                    <img class="events-img" src="./images/event3-img.webp" alt="Christmas Antlers"
+                    width="300" height="300" loading="lazy">
+                </picture>
+                <h2>Tree Lighting Festival</h2>
+                <p>November 24, 5:00pm</p>
+                <p>Town Square</p>
+                <p>10 E Broadway Ave, Jackson, WY 83001</p>
+            </section>
         </div>
-      </footer>
+        <h1 id="spotlight-title">Business Spotlights</h1>
+        <div id="spotlights-container">
+            <picture>
+                <source srcset="./images/spotlight-1.webp" media="(max-width: 500px)" width="300"
+                height="300">
+                <img class="spotlight-img" src="./images/spotlight-1.webp" alt="Grand Targhee Resort"
+                width="450" height="450" loading="lazy">
+            </picture>
+            <section class="spotlight-txt">
+                <h2>Grand Targhee Resort</h2>
+                <p>
+                Housed in the Teton Mountains, Grand Targhee Resort provides all
+                kinds of fun. This resort provides world-class skiing and
+                snowboarding on some of the best snow in the area during the winter,
+                and rugged mountain biking during the summer months. Enjoy your
+                favorite extreme sports surrounded by some of the most beautiful
+                mountains on the planet.
+                </p>
+                <div class="spotlight-button">
+                    <a target="_blank" href="https://www.grandtarghee.com/?gclid=CjwKCAjwp8OpBhAFEiwAG7NaEh58Jborc7jxtWpY545PabfXWVc8QllbIQAVydIRQs8C22cd9hYfpBoCGwUQAvD_BwE">
+                        View Business
+                    </a>
+                </div>
+            </section>
+            <picture>
+                <source srcset="./images/spotlight-2.webp" media="(max-width: 500px)" width="300"
+                height="300">
+                <img class="spotlight-img" src="./images/spotlight-2.webp" alt="Snake River Roasting 
+                Company" width="450" height="450" loading="lazy">
+            </picture>
+            <section class="spotlight-txt">
+                <h2>Snake River Roasting Company</h2>
+                <p>
+                Inspired by Jackson Hole, this flavorful coffee will fuel your next
+                adventure. The Snake River Roasting Company takes pride in roasting
+                coffee beans to perfection. So much passion and time goes into
+                creating the very best flavors.
+                </p>
+                <div class="spotlight-button">
+                    <a target="_blank" href="https://www.snakeriverroastingco.com/?utm_term=snake%20river%20roasting%20co&utm_campaign=SS+%7C+Branded&utm_source=adwords&utm_medium=ppc&hsa_acc=2624038396&hsa_cam=19994590470&hsa_grp=147777150629&hsa_ad=607070570561&hsa_src=g&hsa_tgt=kwd-2009719993125&hsa_kw=snake%20river%20roasting%20co&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEliWbbvJlI0-zUaGZp_kT-JyRBECPce45jBlEOYi77bKt5FFn-KU8RoCKcQQAvD_BwE">
+                        View Business
+                    </a>
+                </div>
+            </section>
+            <picture>
+                <source srcset="./images/spotlight-3.webp" media="(max-width: 500px)" width="300"
+                height="300">
+                <img class="spotlight-img" src="./images/spotlight-3.webp" alt="River Rafting"
+                width="450" height="450" loading="lazy">
+            </picture>
+            <section class="spotlight-txt">
+                <h2>Dave Hansen Whitewater and Scenic River Trips</h2>
+                <p>
+                Expereince Jackson Hole with nature's roller coaster. If you're
+                looking for a little thrill, Dave Hansen provides fun rafting trips
+                for all ages and levels of experience. It's a great way to
+                experience Jackson Hole-if you're willing to get a little wet!
+                </p>
+                <div class="spotlight-button">
+                    <a target="_blank" href="https://www.davehansenwhitewater.com/?utm_source=Adwords&utm_medium=cpc&utm_campaign=Campaign%3A%20local%20text%20BrComp&gad=1&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEsgqMrhxVA7GHHASKWzqAIS2kzjcSvEd7t2WM_xjUjGgd8CJK5B4uRoC-7kQAvD_BwE">
+                        View Business
+                    </a>
+                </div>
+            </section>
+        </div>
     </main>
+    <footer>
+        <div id="footerContact">
+            <p>Jackson Hole Chamber of Commerce</p>
+            <p>123 Moose Road Way</p>
+            <p>Jackson, WY 83001</p>
+            <p>Phone: (123)456-7890</p>
+        </div>
+        <div class="footerCopy">
+            <p>&copy; <span id="date"></span> | Brenleigh Killpack | WDD 230</p>
+        </div>
+        <div class="footerCopy">
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
     <script src="./scripts/hamMenu.js"></script>
     <script src="./scripts/getDate.js"></script>
-  </body>
+</body>
 </html>

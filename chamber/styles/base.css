@@ -80,11 +80,8 @@ header {
   width: 100%;
 }
 
-#title-container {
+main h1 {
   text-align: center;
-}
-
-#home-title {
   font-family: 'Permanent Marker';
   font-size: 1.9rem;
 }
@@ -112,6 +109,7 @@ header {
 }
 
 #events-container h1 {
+  font-family: 'Lato', sans-serif;
   text-align: center;
   padding-top: 15px;
   font-size: 1.75rem;
@@ -129,6 +127,7 @@ header {
 
 #spotlight-title {
     text-align: center;
+    font-family: 'Lato', sans-serif;
 }
 
 .spotlight-img {
