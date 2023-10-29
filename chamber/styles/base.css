@@ -207,8 +207,9 @@ main h1 {
   text-align: center;
 }
 
-.visits h2 {
+.visits p {
   font-size: 1.75rem;
+  padding: 25px;
 }
 
 .attractions ul li, .lodging ul li {
@@ -231,7 +232,7 @@ main h1 {
 }
 
 .weather h2, .weather h3, .weather p, .weather h4 {
-  padding: 3.25px;
+  padding: 5.25px;
 }
 
 .attractions ul li {

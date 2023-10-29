@@ -147,16 +147,12 @@
   }
 
   .visits {
-    height: 300px;
+    height: 250px;
     width: 500px;
   }
 
-  .visits h2 {
-    font-size: 2rem;
-  }
-
   .weather {
-    height: 400px;
+    height: 450px;
     width: 500px;
   }
 
