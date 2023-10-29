@@ -199,6 +199,15 @@ main h1 {
   padding-bottom: 5px;
 }
 
+.visits {
+  height: 200px;
+}
+
+.visits h2 {
+  font-size: 1.75rem;
+  margin: 60px;
+}
+
 .attractions ul li, .lodging ul li {
   list-style-type: none;
 }

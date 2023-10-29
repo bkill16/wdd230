@@ -151,6 +151,11 @@
     width: 500px;
   }
 
+  .visits h2 {
+    font-size: 2rem;
+    margin: 125px;
+  }
+
   .weather {
     height: 350px;
     width: 500px;
