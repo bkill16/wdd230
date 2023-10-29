@@ -200,12 +200,15 @@ main h1 {
 }
 
 .visits {
-  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
 }
 
 .visits h2 {
   font-size: 1.75rem;
-  margin: 60px;
 }
 
 .attractions ul li, .lodging ul li {
