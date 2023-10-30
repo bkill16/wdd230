@@ -7,9 +7,9 @@ if (localStorage.getItem('lastVisit')) {
     if (daysDifference < 1) {
         document.querySelector('#pageVisits').textContent = "Back so soon? Awesome!";
     } else if (daysDifference === 1) {
-        document.querySelector('#pageVisists').textContent = "You last visited 1 day ago.";
+        document.querySelector('#pageVisits').textContent = "You last visited 1 day ago.";
     } else {
-        document.querySelector('#pageVisits').textContent = `You last visited ${daysDifference} ago.`;
+        document.querySelector('#pageVisits').textContent = `You last visited ${daysDifference} days ago.`;
     }
 } else {
     document.querySelector('#pageVisits').textContent = "Welcome! Let us know if you have any questions."
