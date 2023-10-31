@@ -1,41 +1,65 @@
 :root {
-    --form-txt-size: 1.5rem;
-    --form-msg-color: red;
-    --form-border-color: black;
-}
-
-form {
-    border: 1px solid var(--form-border-color);
-    margin: 50px;
-    padding-bottom: 25px;
+    --form-border: solid black 1px;
+    --required-red: solid red 6px;
+    --required-green: solid green 6px;
 }
 
 fieldset {
     border: none;
 }
 
-label, #rangevalue, .pswd-msg, input[type=range] {
+form {
+    border: var(--form-border);
+    margin: 50px;
+    padding: 25px;
+}
+
+form label {
     display: block;
-    font-size: var(--form-txt-size);
-    margin: 25px;
 }
 
-input {
-    margin-left: 10px;
+form input[type=text], form input[type=password],
+form input[type=email] {
+    margin-bottom: 15px;
+    height: 44px;
+    width: 300px;
+    padding: 0.5rem;
 }
 
-.pswd-msg {
-    color: var(--form-msg-color);
+form input[type=range] {
+    height: 44px;
+    width: 300px;
+    margin-top: -15px;
+}
+
+input:required {
+    border-left: var(--required-red)
+}
+
+input:required:valid {
+    border-left: var(--required-green)
 }
 
 .submitBtn {
+    width: 125px;
     padding: 10px;
-    margin-left: 40px;
-    font-size: var(--form-txt-size);
+    font-size: 1.5rem;
+    margin-left: 15px;
 }
 
 @media (max-width: 639px) {
-    label, #rangevalue, .pswd-msg, input[type=range] {
+    form input[type=text], form input[type=password],
+    form input[type=email] {
+        width: 200px;
+    }
+
+    form input[type=range] {
+        width: 200px;
+    }
+
+    .submitBtn {
+        width: 100px;
+        padding: 5px;
         font-size: 1rem;
     }
 }

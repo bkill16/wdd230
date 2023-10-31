@@ -41,13 +41,17 @@
     <main>
         <form method="get" action="record.html">
             <fieldset>
-                <label id="uname">Username* <input type="text" name="uname" required></label>
+                <label for="uname">Username*</label> 
+                <input type="text" id="uname" name="uname" required>
                 <div class="pswd-msg"></div>
-                <label for="pswd">Password* <input type="password" id="pswd" pattern="[a-zA-Z0-9]{8}" 
-                    placeholder="Letters/numbers, 8 char"></label>
-                <label for="pass-check">Confirm Password* <input type="password" id="pass-check" name="pswd-check" required></label>
-                <label id="email">Email* <input type="email" name="email" required placeholder="abc23123@byui.edu"
-                    pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"></label>
+                <label for="pswd">Password*</label>
+                <input type="password" id="pswd" name="password" pattern="[a-zA-Z0-9]{8}" 
+                    placeholder="Letters/numbers, 8 char" required>
+                <label for="pswd-check">Confirm Password*</label>
+                <input type="password" id="pass-check" name="pswd-check" required>
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" placeholder="abc23123@byui.edu"
+                    pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required>
                 <label for="r">Page Rating:</label>
                 <div id="rangevalue">1</div>
                 <input type="range" id="r" name="r" min="1" max="10" value="1" step="1">
@@ -64,7 +68,7 @@
                         <option value="10">10</option>
                     </datalist>
             </fieldset>
-            <input type="submit" value="Submit" class="submitBtn">
+            <input class="submitBtn" type="submit" value="Submit">
         </form>
     </main>
     <footer>
