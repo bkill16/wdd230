@@ -1,0 +1,35 @@
+:root {
+    --form-txt-size: 1.5rem;
+    --form-msg-color: red;
+    --form-border-color: black;
+}
+
+form {
+    border: 1px solid var(--form-border-color);
+    margin: 50px;
+    padding-bottom: 25px;
+}
+
+fieldset {
+    border: none;
+}
+
+label, #rangevalue, .pswd-msg, input[type=range] {
+    display: block;
+    font-size: var(--form-txt-size);
+    margin: 25px;
+}
+
+input {
+    margin-left: 10px;
+}
+
+.pswd-msg {
+    color: var(--form-msg-color);
+}
+
+.submitBtn {
+    padding: 10px;
+    margin-left: 40px;
+    font-size: var(--form-txt-size);
+}

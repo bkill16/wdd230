@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brenleigh Killpack - WDD 230 - Web Frontend Development</title>
+
+    <meta name="description" content="WDD 230 Course Portal">
+    <meta name="author" content="Brenleigh Killpack">
+
+    <meta property="og:title" content="Brenleigh Killpack - WDD 230 Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.squarespace-cdn.com/content/v1/591f55e39f74565ba4db26d8/1496178430380-4JV9F16G3MKV4RSTZMVH/Spud+Day--Parade0068.jpeg">
+    <meta property="og:url" content="https://bkill16.github.io/wdd230/">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@100&display=swap">
+    <link rel="stylesheet" href="./home-page/styles/base.css">
+    <link rel="stylesheet" href="./home-page/styles/larger.css">
+    <link rel="stylesheet" href="./home-page/styles/normalize.css">
+    <link rel="stylesheet" href="./home-page/styles/form.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body class="darkMode">
+    <header>
+        <picture>
+            <source srcset="./home-page/images/home-page-me.webp" media="(max-width: 400px)" width="150">
+            <img src="./home-page/images/home-page-me.webp" alt="Brenleigh's Pic" width="175">
+        </picture>
+        <h1>Brenleigh Killpack</h1>
+        <button id="mode">Light/Dark Mode</button>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./chamber/index.html">Chamber</a></li>
+            <li><a href="./week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="">Form</a></li>
+        </ul>
+    </nav>
+    <body class="darkMode">
+        <form method="get" action="record.html">
+            <fieldset>
+                <label id="uname">Username* <input type="text" name="uname" required></label>
+                <div class="pswd-msg"></div>
+                <label for="pswd">Password* <input type="password" id="pswd" pattern="[a-zA-Z0-9]{8}" 
+                    placeholder="Letters/numbers, 8 char"></label>
+                <label for="pass-check">Confirm Password* <input type="password" id="pass-check" name="pswd-check" required></label>
+                <label id="email">Email* <input type="email" name="email" required placeholder="abc23123@byui.edu"
+                    pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"></label>
+                <label for="r">Page Rating:</label>
+                <div id="rangevalue">1</div>
+                <input type="range" id="r" name="r" min="1" max="10" value="1" step="1">
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+            </fieldset>
+            <input type="submit" value="Submit" class="submitBtn">
+        </form>
+    </body>
+    <footer>
+        <div id="footerCopyRight">
+            <p>&copy; <span id="date"></span> | Brenleigh Killpack | United States</p>
+        </div>
+        <div id="footerDate">
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    <script src="./home-page/scripts/darkMode.js"></script>
+    <script src="./home-page/scripts/getDates.js"></script>
+    <script src="./home-page/scripts/hamMenu.js"></script>
+    <!-- <script src="./home-page/scripts/pageVisits.js"></script> -->
+    <script src="./home-page/scripts/pswd.js"></script>
+    <script src="./home-page/scripts/rating.js"></script>
+</body>
+</html>
