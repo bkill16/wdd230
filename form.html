@@ -49,9 +49,10 @@
                     placeholder="Letters/numbers, 8 char" required>
                 <label>Confirm Password*</label>
                 <input type="password" id="pass-check" name="pswd-check" required>
-                <label>Email*</label>
-                <input type="email" id="email" name="email" placeholder="abc23123@byui.edu"
-                    pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required>
+                <label>BYU-I Email*</label>
+                <input type="email" id="email" name="email"
+                    pattern=".*@byui\.edu$" required title="Please enter a valid
+                    email address.">
                 <label>Page Rating:</label>
                 <div id="rangevalue">1</div>
                 <input type="range" id="r" name="r" min="1" max="10" value="1" step="1">
