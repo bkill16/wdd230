@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Hole Chamber of Commerce | Join</title>
+
+    <meta name="description" content="Join page for Jackson Hole Chamber of Commerce">
+    <meta name="author" content="Brenleigh Killpack">
+
+    <meta property="og:title" content="Jackson Hole Chamber of Commerce | Join">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn4.picryl.com/photo/2016/01/01/one-of-four-large-arches-of-elk-antler-in-the-town-square-of-jackson-hole-wyoming-be953a-1024.jpg">
+    <meta property="og:url" content="https://bkill16.github.io/wdd230/chamber/index.html">
+
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+    <header>
+        <picture>
+            <source srcset="./images/logo-test.webp" media="(max-width: 500px)" width="200">
+            <img id="logo" src="./images/logo-test.webp" alt="Logo" width="375">
+        </picture>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li>
+                    <a href="./index.html">Home</a>
+                    <a href="./discover.html">Discover</a>
+                    <a href="">Directory</a>
+                    <a href="./join.html">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="join-container">
+            <div class="left">
+                <h1>Memberships</h1>
+                <section class="membership-levels" id="n-prft">
+                    <h2>Non-Profit</h2>
+                    <ul>
+                        <li class="fee">No membership fee required</li>
+                        <li>Access to events and workshops</li>
+                        <li>Added to the Chamber's non-profit directory</li>
+                        <li>Opportunities to work with other non-profits</li>
+                    </ul>
+                </section>
+                <section class="membership-levels" id="brnze">
+                    <h2>Bronze</h2>
+                    <ul>
+                        <li class="fee">Annual Fee: $300.00</li>
+                        <li>Access to networking events</li>
+                        <li>Added to the Chamber's business directory</li>
+                        <li>Discounted admission to Chamber events</li>
+                    </ul>
+                </section>
+                <section class="membership-levels" id="slvr">
+                    <h2>Silver</h2>
+                    <ul>
+                        <li class="fee">Annual Fee: $600.00</li>
+                        <li>All Bronze membership benefits</li>
+                        <li>Priority access to workshops and trainings</li>
+                        <li>Featured in Chamber's monthly newsletter</li>
+                        <li>Increased visibility on the Chamber's website</li>
+                    </ul>
+                </section>
+                <section class="membership-levels" id="gld">
+                    <h2>Gold</h2>
+                    <ul>
+                        <li class="fee">Annual Fee: $1,200.00</li>
+                        <li>All Silver membership fees</li>
+                        <li>Exclusive invitations to VIP events</li>
+                        <li>Premier spotlight position on the Chamber's home page</li>
+                        <li>Personalized marketing support and consultation from experts</li>
+                        <li>Discounts on Chamber services, advertising, and sponsorships</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="right">
+                <h1>Apply Now!</h1>
+                <form get="method" action="./thankyou.html">
+                    <fieldset>
+                        <legend>Applicant Information</legend>
+                        <label class="above">First Name* <input type="text" required name="fname"
+                            id="fname"></label>
+                        <label class="above">Last Name* <input type="text" required name="lname"
+                            id="lname"></label>
+                        <label class="above">Title/Position <input type="text" name="position" 
+                            id="position" pattern="^[a-zA-Z\s\-]{7,}$"></label>
+                        <label class="above">Email Address* <input type="email" required name="email"
+                            id="email"></label>
+                        <label class="above">Mobile Phone Number* <input type="tel" required name="phone"
+                            id="phone"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label class="above">Business/Organization Name* <input type="text" required 
+                            name="bname" id="bname"></label>
+                        <div class="side">Membership Level</div>
+                        <label class="side"><input type="radio" name="membership" value="np">Non 
+                        Profit</label>
+                        <label class="side"><input type="radio" name="membership" value="bronze">
+                        Bronze</label>
+                        <label class="side"><input type="radio" name="membership" value="silver">
+                        Silver</label>
+                        <label class="side"><input type="radio" name="membership" value="gold">
+                        Gold</label>
+                        <label class="above">Business/Organization Description <textarea name="description" 
+                            id="description" cols="30" rows="4"></textarea></label>
+                    </fieldset>
+                    <input type="hidden" name="timestamp" id="timestamp" value="">
+                    <input type="submit" value="Apply" class="sbmtBtn">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footerContact">
+            <p>Jackson Hole Chamber of Commerce</p>
+            <p>123 Moose Road Way</p>
+            <p>Jackson, WY 83001</p>
+            <p>Phone: (123)456-7890</p>
+        </div>
+        <div class="footerCopy">
+            <p>&copy; <span id="date"></span> | Brenleigh Killpack | WDD 230</p>
+        </div>
+        <div class="footerCopy">
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    <script src="./scripts/hamMenu.js"></script>
+    <script src="./scripts/getDate.js"></script>
+</body>
+</html>

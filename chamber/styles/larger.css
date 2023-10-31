@@ -208,6 +208,16 @@
     padding-bottom: 15px;
   }
 
+  /* Join page start */
+  .join-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .right h1 {
+    font-size: 5.85rem;
+  }
+
   footer {
     font-size: 1.25rem;
   }
