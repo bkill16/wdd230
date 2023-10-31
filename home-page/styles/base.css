@@ -158,6 +158,10 @@ main h2 {
   color: white;
 }
 
+.darkMode form {
+  border-color: white;
+}
+
 .card p {
   padding: 10px;
   text-align: center;
