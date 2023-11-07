@@ -1,0 +1,32 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.grid-container section {
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+    border: solid 1px black;
+}
+
+.grid-container p {
+    font-size: 1.25rem;
+    padding: 5px;
+}
+
+.grid-container img {
+    box-shadow: 0 0 10px black;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .grid-container section img {
+        width: 100%;
+        height: auto;
+    }
+}

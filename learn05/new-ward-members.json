@@ -1,0 +1,38 @@
+{
+    "householdName" : "Killpack",
+    "moved" : "April, 1997",
+    "householdSize" : 6,
+    "visited" : true,
+    "members" : [
+        {
+            "name" : "Jason",
+            "gender" : "Male",
+            "dob" : "08/05/1964"
+        },
+        {
+            "name" : "Joyce",
+            "gender" : "Female",
+            "dob" : "08/27/1966"
+        },
+        {
+            "name" : "Chelsea",
+            "gender" : "Female",
+            "dob" : "01/31/1991"
+        },
+        {
+            "name" : "Westley",
+            "gender" : "Male",
+            "dob" : "12/18/1995"
+        },
+        {
+            "name" : "Garett",
+            "gender" : "Male",
+            "dob" : "04/05/2000"
+        },
+        {
+            "name" : "Brenleigh",
+            "gender" : "Female",
+            "dob" : "09/16/2002"
+        }
+    ]
+}

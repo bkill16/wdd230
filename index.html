@@ -23,7 +23,8 @@
     <header>
         <picture>
             <source srcset="./home-page/images/home-page-me.webp" media="(max-width: 400px)" width="150">
-            <img src="./home-page/images/home-page-me.webp" alt="Brenleigh's Pic" width="175">
+            <img src="./home-page/images/home-page-me.webp" alt="Brenleigh's Pic" width="175" 
+            loading="lazy">
         </picture>
         <h1>Brenleigh Killpack</h1>
         <button id="mode">Light/Dark Mode</button>
@@ -40,10 +41,10 @@
     <main>
         <div id="hero">
             <picture>
-                <source srcset="./home-page/images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="./home-page/images/hero-small.webp" media="(max-width: 400px)">
                 <source srcset="./home-page/images/hero-medium.webp" media="(max-width: 1000px)">
-                <img class="hero-img" src="./home-page/images/hero-large.webp" alt="Idaho Falls Temple"
-                width="1500" height="750">
+                <img class="hero-img" src="./home-page/images/hero-img.webp" alt="Idaho Falls Temple"
+                width="100%" height="auto" loading="lazy">
             </picture>
             <div id="hero-label">
                 <p>Idaho Falls Temple</p>
@@ -76,6 +77,12 @@
                         <a href="./week04/images/week04-combinators.png">CSS Combinators</a><span> | </span>
                         <a href="./week04/table-build.html">HTML Tables</a><span> | </span>
                         <a href="./form-start/index.html">HTML Forms</a>
+                    </li>
+                    <li>
+                        Lesson 05: <a href="https://codepen.io/bkill16/pen/GRzrOdo">CSS Pseudo Elements</a>
+                        <span> | </span>
+                        <a href="/learn05/new-ward-members.json">JSON</a><span> | </span>
+                        <a href="/learn05/prophets.html">The Fetch API</a><span> | </span>
                     </li>
                 </ul>
             </section>
