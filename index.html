@@ -87,10 +87,17 @@
                     </li>
                 </ul>
             </section>
-            <section class="card">
+            <section id="weather-card" class="card">
                 <h3>Information</h3>
                 <p>Rexburg, Idaho</p>
                 <p>Weather</p>
+                <div class="weather-container">
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <span id="current-temp"></span>
+                </div>
                 <p>Page Visits: <span id="visits"></span></p>
             </section>
         </div>
@@ -110,5 +117,6 @@
     <script src="./home-page/scripts/getDates.js"></script>
     <script src="./home-page/scripts/hamMenu.js"></script>
     <script src="./home-page/scripts/pageVisits.js"></script>
+    <script src="./home-page/scripts/weather.js"></script>
 </body>
 </html>

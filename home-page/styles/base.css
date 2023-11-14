@@ -169,6 +169,14 @@ main h2 {
   margin: 8px;
 }
 
+#weather-card {
+  text-align: center;
+}
+
+.weather-container {
+  margin: -10px;
+}
+
 iframe {
   display: block;
   margin: 0 auto;
