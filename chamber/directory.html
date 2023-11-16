@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Hole Chamber of Commerce | Home</title>
+
+    <meta name="description" content="Home page for Jackson Hole Chamber of Commerce">
+    <meta name="author" content="Brenleigh Killpack">
+
+    <meta property="og:title" content="Jackson Hole Chamber of Commerce | Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn4.picryl.com/photo/2016/01/01/one-of-four-large-arches-of-elk-antler-in-the-town-square-of-jackson-hole-wyoming-be953a-1024.jpg">
+    <meta property="og:url" content="https://bkill16.github.io/wdd230/chamber/index.html">
+
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+    <header>
+        <picture>
+            <source srcset="./images/logo-test.webp" media="(max-width: 500px)" width="200">
+            <img id="logo" src="./images/logo-test.webp" alt="Logo" width="375">
+        </picture>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li>
+                    <a href="./index.html">Home</a>
+                    <a href="./discover.html">Discover</a>
+                    <a href="./directory.html">Directory</a>
+                    <a href="./join.html">Join</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        <div id="footerContact">
+            <p>Jackson Hole Chamber of Commerce</p>
+            <p>123 Moose Road Way</p>
+            <p>Jackson, WY 83001</p>
+            <p>Phone: (123)456-7890</p>
+        </div>
+        <div class="footerCopy">
+            <p>&copy; <span id="date"></span> | Brenleigh Killpack | WDD 230</p>
+        </div>
+        <div class="footerCopy">
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+    <script src="./scripts/hamMenu.js"></script>
+    <script src="./scripts/getDate.js"></script>
+    <script src="./scripts/members.js"></script>
+</body>
+</html>
