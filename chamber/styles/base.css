@@ -84,6 +84,7 @@ main h1 {
   text-align: center;
   font-family: 'Permanent Marker';
   font-size: 1.9rem;
+  margin-top: 50px;
 }
 
 #join-card {
@@ -112,16 +113,16 @@ main h1 {
   padding-bottom: 10px;
 }
 
-#events-container h1 {
+#events-container h2 {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  padding-top: 15px;
+  padding: 15px;
   font-size: 1.75rem;
 }
 
-#events-container h2 {
-  text-align: center;
+#events-container h3 {
   font-size: 1.3rem;
+  padding: 5px;
 }
 
 .events-img {
@@ -132,6 +133,8 @@ main h1 {
 #spotlight-title {
     text-align: center;
     font-family: 'Lato', sans-serif;
+    font-size: 1.75rem;
+    margin: 15px;
 }
 
 .spotlight-img {
