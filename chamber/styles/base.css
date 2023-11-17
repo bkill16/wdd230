@@ -109,7 +109,7 @@ main h1 {
 }
 
 #events-container {
-  background-color: #a3b18a;
+  background-color: #9aa88f;
   padding-bottom: 10px;
 }
 
@@ -366,6 +366,80 @@ form input:required:valid {
   text-decoration: none;
   padding: 10px;
   font-size: 1.5rem;
+}
+
+/* Start of directory page */
+.directory-grid.list {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.directory-menu {
+  text-align: center;
+}
+
+#grid-btn, #list-btn {
+  padding: 10px;
+  font-size: 1.15rem;
+  margin: 0 5px;
+  margin-bottom: 10px;
+}
+
+.directory-grid.list img {
+  display: none;
+}
+
+.directory-grid.list section {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+}
+
+.directory-grid.list h2 {
+  font-size: 1.4 rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.directory-grid.list p,
+.directory-grid.list a {
+  font-size: 1rem;
+}
+
+.directory-grid.list section > * {
+  margin: 0 1rem;
+}
+
+.directory-grid.list section:nth-child(odd)
+{
+  background-color: #9aa88f;
+}
+
+.directory-grid.grid.busCards section {
+  background-color: #9aa88f;
+  text-align: center;
+  padding: 25px;
+  margin: 15px;
+}
+
+#directory-title {
+  padding-bottom: 25px;
+  font-size: 2.5rem;
+}
+
+.busCards h2, h3 {
+  padding: 5px;
+}
+
+.busCards h3 {
+  padding-bottom: 10px;
+}
+
+.busCards p, a {
+  font-size: 1.08rem;
+  padding: 3px;
 }
 
 footer {

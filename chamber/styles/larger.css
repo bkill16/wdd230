@@ -224,6 +224,23 @@
     font-size: 5.85rem;
   }
 
+  /* Directory page start */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  #directory-title {
+    padding-bottom: 0px;
+    font-size: 5rem;
+  }
+
+  .directory-grid.list p,
+  .directory-grid.list a,
+  .directory-grid.list h3 {
+    font-size: 1.2rem;
+  }
+
   footer {
     font-size: 1.25rem;
   }
