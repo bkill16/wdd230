@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const display = document.querySelector('.directory-grid');
   
-    // Check if neither 'grid' nor 'list' is set, then set 'grid'
     if (!display.classList.contains('grid') && !display.classList.contains('list')) {
       display.classList.add('grid');
     }
