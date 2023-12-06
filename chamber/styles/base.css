@@ -144,10 +144,6 @@ figcaption {
   margin-right: 10px;
 }
 
-#forecastTitle {
-  text-align: center;
-}
-
 #forecastContainer {
   display: flex;
   justify-content: space-between;
