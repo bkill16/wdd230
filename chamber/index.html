@@ -19,34 +19,52 @@
     <link rel="icon" href="./favicon.ico">
 </head>
 <body>
+    <div id="announcement">
+        <p>Join us Wednesday at 7:00pm for the Chamber of Commerce meet and greet!</p>
+        <button id="close">Close</button>
+    </div>
     <header>
-        <picture>
-            <source srcset="./images/logo-test.webp" media="(max-width: 500px)" width="200">
-            <img id="logo" src="./images/logo-test.webp" alt="Logo" width="375">
-        </picture>
         <nav>
-            <button id="menu"></button>
+            <div>
+                <picture id="logo">
+                    <source srcset="./images/logo-test.webp" media="(max-width: 500px)" width="200">
+                    <img src="./images/logo-test.webp" alt="Logo" width="375">
+                </picture>
+            </div>
             <ul class="navigation">
-                <li>
-                    <a href="./index.html">Home</a>
-                    <a href="./discover.html">Discover</a>
-                    <a href="./directory.html">Directory</a>
-                    <a href="./join.html">Join</a>
-                </li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./discover.html">Discover</a></li>
+                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./join.html">Join</a></li>
             </ul>
         </nav>
+        <div id="menu-container">
+            <button id="menu"></button>
+        </div>
     </header>
     <main>
-        <picture>
-            <source srcset="./images/home-hero-small.webp" media="(max-width: 500px)" width="500" 
-            height="500">
-            <img id="home-hero" src="./images/home-hero-large.webp" alt="Grand Tetons" width="1280" 
-            height="725">
-        </picture>
-        <div id="weather-card">
-            <p>Weather - 🌞 55°F</p>
+        <div>
+            <picture>
+                <source srcset="./images/home-hero-small.webp" media="(max-width: 500px)" width="500" 
+                height="500">
+                <img src="./images/home-hero2.webp" alt="Grand Tetons">
+            </picture>
         </div>
-        <h1>Jackson Hole Chamber of Commerce</h1>
+        <div class="home-h1">
+            <h1>Jackson Hole Chamber of Commerce</h1>
+        </div>
+        <div id="weather-card">
+            <div class="weather-container">
+                <p>Weather Today: </p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <span id="current-temp"></span>
+            </div>
+            <h3 id="forecastTitle">3 Day Forecast</h3>
+            <div id="forecastContainer"></div>
+        </div>
         <div id="join-card">
             <p>Since 1946, the Jackson Hole Chamber of Commerce has worked to strengthen the business
                 atmosphere and community throughout the valley. As a member, you'll gain access to 
@@ -94,70 +112,11 @@
                 <p>10 E Broadway Ave, Jackson, WY 83001</p>
             </section>
         </div>
-        <h2 id="spotlight-title">Business Spotlights</h2>
-        <div id="spotlights-container">
-            <picture>
-                <source srcset="./images/spotlight-1.webp" media="(max-width: 500px)" width="300"
-                height="300">
-                <img class="spotlight-img" src="./images/spotlight-1.webp" alt="Grand Targhee Resort"
-                width="450" height="450" loading="lazy">
-            </picture>
-            <section class="spotlight-txt">
-                <h3>Grand Targhee Resort</h3>
-                <p>
-                Housed in the Teton Mountains, Grand Targhee Resort provides all
-                kinds of fun. This resort provides world-class skiing and
-                snowboarding on some of the best snow in the area during the winter,
-                and rugged mountain biking during the summer months. Enjoy your
-                favorite extreme sports surrounded by some of the most beautiful
-                mountains on the planet.
-                </p>
-                <div class="spotlight-button">
-                    <a target="_blank" href="https://www.grandtarghee.com/?gclid=CjwKCAjwp8OpBhAFEiwAG7NaEh58Jborc7jxtWpY545PabfXWVc8QllbIQAVydIRQs8C22cd9hYfpBoCGwUQAvD_BwE">
-                        View Business
-                    </a>
-                </div>
-            </section>
-            <picture>
-                <source srcset="./images/spotlight-2.webp" media="(max-width: 500px)" width="300"
-                height="300">
-                <img class="spotlight-img" src="./images/spotlight-2.webp" alt="Snake River Roasting 
-                Company" width="450" height="450" loading="lazy">
-            </picture>
-            <section class="spotlight-txt">
-                <h3>Snake River Roasting Company</h3>
-                <p>
-                Inspired by Jackson Hole, this flavorful coffee will fuel your next
-                adventure. The Snake River Roasting Company takes pride in roasting
-                coffee beans to perfection. So much passion and time goes into
-                creating the very best flavors.
-                </p>
-                <div class="spotlight-button">
-                    <a target="_blank" href="https://www.snakeriverroastingco.com/?utm_term=snake%20river%20roasting%20co&utm_campaign=SS+%7C+Branded&utm_source=adwords&utm_medium=ppc&hsa_acc=2624038396&hsa_cam=19994590470&hsa_grp=147777150629&hsa_ad=607070570561&hsa_src=g&hsa_tgt=kwd-2009719993125&hsa_kw=snake%20river%20roasting%20co&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEliWbbvJlI0-zUaGZp_kT-JyRBECPce45jBlEOYi77bKt5FFn-KU8RoCKcQQAvD_BwE">
-                        View Business
-                    </a>
-                </div>
-            </section>
-            <picture>
-                <source srcset="./images/spotlight-3.webp" media="(max-width: 500px)" width="300"
-                height="300">
-                <img class="spotlight-img" src="./images/spotlight-3.webp" alt="River Rafting"
-                width="450" height="450" loading="lazy">
-            </picture>
-            <section class="spotlight-txt">
-                <h3>Dave Hansen Whitewater and Scenic River Trips</h3>
-                <p>
-                Expereince Jackson Hole with nature's roller coaster. If you're
-                looking for a little thrill, Dave Hansen provides fun rafting trips
-                for all ages and levels of experience. It's a great way to
-                experience Jackson Hole-if you're willing to get a little wet!
-                </p>
-                <div class="spotlight-button">
-                    <a target="_blank" href="https://www.davehansenwhitewater.com/?utm_source=Adwords&utm_medium=cpc&utm_campaign=Campaign%3A%20local%20text%20BrComp&gad=1&gclid=CjwKCAjwp8OpBhAFEiwAG7NaEsgqMrhxVA7GHHASKWzqAIS2kzjcSvEd7t2WM_xjUjGgd8CJK5B4uRoC-7kQAvD_BwE">
-                        View Business
-                    </a>
-                </div>
-            </section>
+        <h2 id="spotlight-title">Spotlights</h2>
+        <div class="spotlights-wrapper">
+            <div id="spotlights-container">
+                <div class="businessInfo"></div>
+            </div>
         </div>
     </main>
     <footer>
@@ -176,5 +135,9 @@
     </footer>
     <script src="./scripts/hamMenu.js"></script>
     <script src="./scripts/getDate.js"></script>
+    <script src="./scripts/jacksonWeather.js"></script>
+    <script src="./scripts/spotlights.js"></script>
+    <script src="./scripts/forecast.js"></script>
+    <script src="./scripts/announcement.js"></script>
 </body>
 </html>

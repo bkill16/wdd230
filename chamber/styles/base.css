@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #F8F3EB;
 }
 
 * {
@@ -10,8 +11,27 @@ body {
   box-sizing: border-box;
 }
 
+#announcement {
+  background-color: #DBC49F;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+#announcement.open + header #menu {
+  top: calc(1.5rem + 10px);
+}
+
+#close {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #4E3B31;
+  color: #F8F3EB;
+  border: none;
+}
+
 header {
-  background-color: #3a5a40;
+  background-color: #224D37;
+  position: relative;
 }
 
 #logo {
@@ -21,12 +41,13 @@ header {
 #menu {
   font-size: 2rem;
   padding: 5px;
-  background-color: #3a5a40;
+  background-color: #224D37;
   color: white;
   position: absolute;
   right: 0.55rem;
-  top: .8rem;
+  top: .3rem;
   border: none;
+  z-index: 2;
 }
 
 #menu::before {
@@ -41,11 +62,13 @@ header {
   display: flex;
   flex-direction: column;
   list-style: none;
-  background-color: #c5afa4;
+  background-color: #DBC49F;
 }
+
 .navigation li {
   display: none;
 }
+
 .navigation li a {
   display: block;
   padding: 1rem;
@@ -53,8 +76,9 @@ header {
   text-decoration: none;
   color: black;
 }
+
 .navigation li a:hover {
-  background-color: #6d4c3d;
+  background-color: #4E3B31;
   color: white;
   font-weight: 700;
 }
@@ -63,6 +87,7 @@ header {
   display: block;
   width: 100%;
 }
+
 .open li a {
   display: block;
 }
@@ -71,20 +96,67 @@ header {
   width: 100%;
 }
 
-#weather-card {
-  background-color: #c5afa4;
-  padding: 10px;
-  margin-top: -3px;
-  text-align: center;
-  font-size: 1.55rem;
-  width: 100%;
+.home-h1 {
+  background-color: #4E3B31;
+  margin-top: -24px;
 }
 
-main h1 {
+.home-h1 h1 {
   text-align: center;
   font-family: 'Permanent Marker';
   font-size: 1.9rem;
-  margin-top: 50px;
+  color: #F8F3EB;
+  padding: 25px;
+}
+
+#weather-card {
+  background-color: #DBC49F;
+  padding: 5px;
+  width: 100%;
+  margin-top: -21px;
+}
+
+.weather-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-container p {
+  font-size: 1.25rem;
+}
+
+#weather-icon, 
+figcaption,
+#current-temp {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#current-temp,
+figcaption {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+figcaption {
+  margin-right: 10px;
+}
+
+#forecastTitle {
+  text-align: center;
+}
+
+#forecastContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+}
+
+#forecastContainer p {
+  font-size: 1.1rem;
 }
 
 #join-card {
@@ -99,75 +171,83 @@ main h1 {
 }
 
 .joinBtn {
-  background-color: #3a5a40;
-  color: white;
+  background-color: #4E3B31;
+  color: #F8F3EB;
   text-decoration: none;
   font-size: 2rem;
   padding: 10px;
-  border: solid .5px #3a5a40;
+  border: solid .5px #4E3B31;
   border-radius: 10px;
 }
 
+.joinBtn:hover {
+  font-weight: bold;
+}
+
 #events-container {
-  background-color: #9aa88f;
+  background-color: #224D37;
   padding-bottom: 10px;
 }
 
 #events-container h2 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Permanent Marker';
+  color: #F8F3EB;
   text-align: center;
-  padding: 15px;
-  font-size: 1.75rem;
+  padding: 25px;
+  font-size: 3rem;
 }
 
 #events-container h3 {
   font-size: 1.3rem;
   padding: 5px;
+  color: white;
 }
 
 .events-img {
-    border: solid 1px black;
+    border: none;
     border-radius: 15px;
+}
+
+#events-container p {
+  color: white;
+  font-size: 1.25rem;
 }
 
 #spotlight-title {
     text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.75rem;
+    font-family: 'Permanent Marker';
+    font-size: 3rem;
     margin: 15px;
 }
 
-.spotlight-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#spotlights-container {
+  text-align: center;
 }
 
-.spotlight-txt {
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
+#spotlights-container h3 {
+  font-size: 1.75rem;
+  margin-top: 5px;
 }
 
-.spotlight-button {
-  text-align: center;
-  background-color: #6d4c3d;
+#spotlights-container p {
   font-size: 1.25rem;
-  margin-top: 10px;
-  padding: 5px;
-  border: solid 1px black;
-  border-radius: 5px;
+  margin: 5px;
+  line-height: 1.25;
 }
 
-.spotlight-button a {
+#spotlights-container a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4E3B31;
+  color: white;
   text-decoration: none;
-  color: white;
+  border-radius: 4px;
+  margin: 10px;
+  font-size: 1.2rem;
 }
 
-.spotlight-button a:visited {
-  color: white;
+#spotlights-container a:hover {
+  font-weight: bold;
 }
 
 .home-card {
@@ -224,7 +304,7 @@ main h1 {
 }
 
 .weather h2, .popular h2, .attractions h2, .lodging h2, .eating h2 {
-  background-color: #6d4c3d;
+  background-color: #4E3B31;
   color: white;
   padding: 5px;
 }
@@ -257,12 +337,14 @@ main h1 {
 /* Join Page Start */
 .join-container h1 {
   font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Permanent Marker';
 }
 
 .membership-levels {
-  border: solid #6d4c3d 5px;
+  border: solid #4E3B31 5px;
   border-radius: 25px;
-  background-color: #c5afa4;
+  background-color: #DBC49F;
   margin: 25px;
   padding: 25px;
 }
@@ -328,7 +410,7 @@ textarea {
   padding: 10px;
   font-size: 1.75rem;
   width: 40%;
-  background-color: #6d4c3d;
+  background-color: #4E3B31;
   color: white;
   border: none;
   border-radius: 7px;
@@ -345,7 +427,7 @@ form input:required:valid {
 
 /* Submission page start */
 #tybody {
-  background-color: #c5afa4;
+  background-color: #F8F3EB;
 }
 
 #tymain {
@@ -354,6 +436,7 @@ form input:required:valid {
 
 #tymain h1 {
   font-size: 2.5rem;
+  font-family: 'Permanent Marker';
 }
 
 #tymain h2 {
@@ -361,7 +444,7 @@ form input:required:valid {
 }
 
 .homeBtn {
-  background-color: #6d4c3d;
+  background-color: #4E3B31;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -371,8 +454,7 @@ form input:required:valid {
 /* Start of directory page */
 .directory-grid.list {
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column;  
 }
 
 .directory-menu {
@@ -414,11 +496,11 @@ form input:required:valid {
 
 .directory-grid.list section:nth-child(odd)
 {
-  background-color: #9aa88f;
+  background-color: #DBC49F;
 }
 
 .directory-grid.grid.busCards section {
-  background-color: #9aa88f;
+  border: solid 5px #4E3B31;
   text-align: center;
   padding: 25px;
   margin: 15px;
@@ -427,6 +509,8 @@ form input:required:valid {
 #directory-title {
   padding-bottom: 25px;
   font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Permanent Marker'
 }
 
 .busCards h2, h3 {

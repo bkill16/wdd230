@@ -3,18 +3,54 @@
     display: none;
   }
 
+  #announcement {
+    font-size: 2rem;
+  }
+
+  #close {
+    padding: 8px;
+    font-size: 1.25rem;
+  }
+
   header {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #logo {
+    margin-left: 20px;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .navigation {
+    flex-direction: row;
+    background-color: #224D37;
+    margin-left: 235px;
+    margin-top: 20px;
+  }
+
+  .navigation ul {
+    display: flex;
+    list-style: none;
   }
 
   .navigation li {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5rem;
+    display: initial;
   }
 
-  .navigation a {
-    margin: 0 auto;
+  .navigation li a {
+    color: white;
+    font-size: 1.75rem;
+    margin-right: 30px;
+  }
+
+  .navigation li a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    background-color: #224D37;
   }
 
   #home-hero {
@@ -22,13 +58,36 @@
   }
 
   #weather-card {
-    margin-top: -4px;
-    font-size: 1.8rem;
-    width: 100%;
+    padding: 15px;
+    margin-top: -49px;
   }
 
-  main h1 {
+  .weather-container p {
+    font-size: 2.25rem;
+  }
+
+  #current-temp,
+  figcaption {
+    font-size: 2.25rem;
+  }
+
+  #forecastTitle {
+    font-size: 2rem;
+  }
+
+  #forecastContainer p {
+    font-size: 1.6rem;
+    margin-right: 127px;
+    margin-left: 127px;
+  }
+
+  .home-h1 {
+    margin-top: -51px;
+  }
+
+  .home-h1 h1 {
     font-size: 4.5rem;
+    padding: 50px;
   }
 
   #join-card {
@@ -42,6 +101,11 @@
     padding: 20px;
   }
 
+  .joinBtn {
+    padding: 15px;
+    font-size: 2.5rem;
+  }
+
   #events-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -51,7 +115,7 @@
   #events-container h2 {
     grid-column: 2/3;
     padding-bottom: 15px;
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
 
   #events-container h3 {
@@ -76,54 +140,37 @@
   }
 
   #spotlight-title {
-    font-size: 2.5rem;
+    font-size: 3.75rem;
     margin-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .spotlights-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #spotlights-container {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+    width: 50%;
+  }
+
+  #spotlights-container img {
+    margin-top: 10px;
+    border: solid 3px #4E3B31;
   }
 
   #spotlights-container h3 {
-    font-size: 2rem;
-    padding-bottom: 10px;
+    font-size: 2.4rem;
   }
 
-  .spotlight-img {
-    margin: 50px;
+  #spotlights-container p {
+    font-size: 1.6rem;
   }
 
-  .spotlight-txt {
-    margin: 50px;
-  }
-
-  .spotlight-txt h2 {
-    font-size: 1.75rem;
-    padding-bottom: 25px;
-  }
-
-  .spotlight-txt p {
-    font-size: 1.75rem;
-  }
-
-  .spotlight-button {
-    text-align: center;
-    background-color: #6d4c3d;
-    font-size: 1.75rem;
-    padding: 10px;
-    margin-top: 25px;
-    border: solid 1px black;
-    border-radius: 5px;
-  }
-
-  .spotlight-button a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .spotlight-button a:visited {
-    color: white;
+  #spotlights-container a {
+    font-size: 1.7rem;
+    padding: 15px;
   }
 
   /* Discover page start */
