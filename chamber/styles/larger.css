@@ -185,7 +185,8 @@
   }
 
   .right picture img {
-    margin: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .visits, .weather, .popular, .attractions, .lodging, .eating {
@@ -269,6 +270,14 @@
 
   .right h1 {
     font-size: 5.85rem;
+  }
+
+  .left h1 {
+    font-size: 3.5rem;
+  }
+
+  .membership-levels {
+    font-size: 1.14rem;
   }
 
   /* Directory page start */
