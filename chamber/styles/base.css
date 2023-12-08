@@ -42,10 +42,11 @@ header {
   position: relative;
 }
 
-#logo {
+#logo img {
   position: relative;
   top: 2px;
   left: 2px;
+  max-width: 200px;
 }
 
 #menu {
