@@ -1,13 +1,16 @@
-document.addEventListener("DOMContentLoaded", function() {
-    var banner = document.querySelector("#announcement");
-    var closeButton = document.querySelector("#close");
-
-    var today = new Date().getDay();
-    if (today >= 1 && today <= 3) {
-        banner.style.display = "block";
+document.addEventListener('DOMContentLoaded', function () {
+    var banner = document.querySelector('#announcement');
+    var closeBanner = document.querySelector('#close');
+  
+    var checkToday = new Date().getDay();
+  
+    if (checkToday >= 1 && checkToday <= 3) {
+      banner.classList.add('visible');
+    } else {
+      banner.classList.remove('visible');
     }
-
-    closeButton.addEventListener("click", function() {
-        banner.style.display = "none";
+  
+    closeBanner.addEventListener('click', function () {
+      banner.classList.remove('visible');
     });
-});
+  });

@@ -13,28 +13,36 @@ function fetchForecast() {
   fetch(fullurl)
     .then((response) => response.json())
     .then((data) => {
-      const uniqueForecasts = [];
+      const forecastsByDate = {};
+
       data.list.forEach((forecast) => {
         const date = new Date(forecast.dt_txt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 
-        if (futureDates.includes(date) && !uniqueForecasts.some((entry) => entry.date === date)) {
-          uniqueForecasts.push({
-            date,
+        if (futureDates.includes(date)) {
+          if (!forecastsByDate[date]) {
+            forecastsByDate[date] = { high: -Infinity, low: Infinity, forecasts: [] };
+          }
+
+          forecastsByDate[date].forecasts.push({
             temperature: forecast.main.temp,
             icon: forecast.weather[0].icon,
           });
+
+          forecastsByDate[date].high = Math.max(forecastsByDate[date].high, forecast.main.temp);
+          forecastsByDate[date].low = Math.min(forecastsByDate[date].low, forecast.main.temp);
         }
       });
 
       forecastContainer.innerHTML = '';
 
-      uniqueForecasts.forEach((forecast) => {
+      Object.entries(forecastsByDate).forEach(([date, { high, low, forecasts }]) => {
         const forecastEl = document.createElement('div');
 
         forecastEl.innerHTML = `
-          <p>${forecast.date}</p>
-          <img src="http://openweathermap.org/img/w/${forecast.icon}.png" alt="Weather Icon">
-          <p>${forecast.temperature}°F</p>
+          <p>${date}</p>
+          <img src="http://openweathermap.org/img/w/${forecasts[0].icon}.png" alt="Weather Icon">
+          <p>High: ${Math.round(high)}°F</p>
+          <p>Low: ${Math.round(low)}°F</p>
         `;
 
         forecastContainer.appendChild(forecastEl);

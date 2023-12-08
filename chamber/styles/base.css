@@ -12,8 +12,16 @@ body {
 }
 
 #announcement {
+  display: none;
+}
+
+#announcement.visible {
+  display: block;
+}
+
+#announcement {
   background-color: #DBC49F;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 10px;
 }
 
@@ -155,6 +163,10 @@ figcaption {
   font-size: 1.1rem;
 }
 
+#forecastContainer img {
+  margin-top: 5px;
+}
+
 #join-card {
   padding: 25px;
   text-align: center;
@@ -229,6 +241,12 @@ figcaption {
   font-size: 1.25rem;
   margin: 5px;
   line-height: 1.25;
+}
+
+#spotlights-container img {
+  border: solid 1px black;
+  width: 300px;
+  height: 300px;
 }
 
 #spotlights-container a {
