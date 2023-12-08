@@ -43,7 +43,9 @@ header {
 }
 
 #logo {
-  margin: 10px;
+  position: relative;
+  top: 2px;
+  left: 2px;
 }
 
 #menu {
@@ -135,19 +137,18 @@ header {
   font-size: 1.25rem;
 }
 
-#weather-icon, 
-figcaption,
-#current-temp {
+#current-temp,
+#weather-desc {
   display: inline-block;
   vertical-align: middle;
 }
 
 #current-temp,
-figcaption {
+#weather-desc {
   font-size: 1.25rem;
 }
 
-figcaption {
+#weather-desc {
   margin-right: 10px;
 }
 
@@ -429,6 +430,10 @@ textarea {
   border: none;
   border-radius: 7px;
   margin-bottom: 25px;
+}
+
+.sbmtBtn:hover {
+  font-weight: bold;
 }
 
 form input:required {

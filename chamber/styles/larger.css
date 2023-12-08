@@ -17,10 +17,6 @@
     justify-content: space-between;
   }
 
-  #logo {
-    margin-left: 20px;
-  }
-
   nav {
     display: flex;
   }
@@ -72,7 +68,7 @@
   }
 
   #current-temp,
-  figcaption {
+  #weather-desc {
     font-size: 2.25rem;
   }
 
@@ -103,6 +99,10 @@
     font-size: 1.8rem;
   }
 
+  #join-card p {
+    margin-bottom: 60px;
+  }
+
   #join-card button {
     margin-top: 55px;
     font-size: 2.5rem;
@@ -123,7 +123,7 @@
   #events-container h2 {
     grid-column: 2/3;
     padding-bottom: 15px;
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
   #events-container h3 {
@@ -148,7 +148,7 @@
   }
 
   #spotlight-title {
-    font-size: 3.75rem;
+    font-size: 4rem;
     margin-top: 50px;
     margin-bottom: 40px;
   }
