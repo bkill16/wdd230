@@ -24,6 +24,6 @@ function displayResults(data) {
     const temperature = `${Math.round(data.main.temp)}&deg;F`;
     const desc = data.weather[0].description;
 
-    currentTemp.innerHTML = `Weather Today: ${temperature},&nbsp; `;
+    currentTemp.innerHTML = `Current Weather: ${temperature},&nbsp; `;
     captionDesc.textContent = `${desc}`;
 }

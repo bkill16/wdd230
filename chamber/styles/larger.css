@@ -80,7 +80,6 @@
     font-size: 1.75rem;
     margin-left: 120px;
     margin-right: 120px;
-    margin-top: 10px;
   }
 
   #forecastContainer img {
@@ -152,7 +151,7 @@
   }
 
   #spotlight-title {
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-top: 50px;
     margin-bottom: 40px;
   }
@@ -301,7 +300,6 @@
   }
 
   #directory-title {
-    padding-bottom: 0px;
     font-size: 5rem;
   }
 
